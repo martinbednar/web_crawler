@@ -1,0 +1,13 @@
+{
+  "info": {
+    "id": 23,
+    "origId": "Encoding",
+    "name": "Encoding",
+    "url": "https://encoding.spec.whatwg.org/",
+    "catId": "core"
+  },
+  "features": [
+    "TextDecoder.prototype.decode",
+    "TextEncoder.prototype.encode"
+  ]
+}

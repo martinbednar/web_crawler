@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Frame listing popup</title>
+        <link href="../../config/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../config/css/bootstrap-theme.min.css" rel="stylesheet">
+    </head>
+    <body class="not-loaded">
+        <header class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Features Blocked</h2>
+                </div>
+            </div>
+        </header>
+        <section class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <div id="loading-section">
+                        <p>Fetching blocking information…</p>
+                    </div>
+
+                    <div id="loaded-section" class="hidden">
+                        <section id="frames-with-blocking-section">
+                            <p>
+                                The following features have been blocked on this page.
+                                You can also <a href="/pages/report/report-json.html">export
+                                all logged information for all tabs</a>.</p>
+                            <div id="blocked-feature-report"></div>
+                        </section>
+
+                        <section id="frames-without-blocking-section" class="hidden">
+                            <h3>Frames Where No Features were Blocked</h3>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../../lib/init.js"></script>
+        <script src="../../lib/browser.js"></script>
+        <script src="../../lib/standards.js"></script>
+        <script src="../../lib/reports.js"></script>
+        <script src="../../lib/third_party/uri.all.min.js"></script>
+        <script src="js/report.js"></script>
+    </body>
+</html>
+

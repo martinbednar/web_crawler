@@ -1,0 +1,16 @@
+body, html {
+    min-width: 320px;
+    width: 720px;
+}
+
+section .row {
+    margin-bottom: 1em;
+}
+
+.not-loaded .loaded-section {
+    display: none;
+}
+
+.loaded .loading-section {
+    display: none;
+}

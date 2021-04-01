@@ -1,0 +1,23 @@
+body {
+    min-width: 800px;
+}
+
+.list-group-item .badge a {
+    color: white;
+}
+
+.web-api-standards-container h3 {
+    margin-top: 0;
+}
+
+section p:first-child {
+    padding-top: 1em;
+}
+
+section.container {
+    margin-top: 2em;
+}
+
+section {
+    margin-bottom: 5em;
+}

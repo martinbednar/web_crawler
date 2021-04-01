@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+*.swp
+test.config.js
+dist/
+webapi_manager.zip
+add-on/manifest.json
+add-on/lib/standards.js
+add-on/lib/third_party/sjcl.js
+add-on/lib/third_party/uri.all.min.js
+add-on/config/js/third_party/vue.runtime.min.js
+add-on/config/js/vue_compiled_templates/

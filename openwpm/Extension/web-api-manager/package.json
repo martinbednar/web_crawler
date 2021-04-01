@@ -1,0 +1,56 @@
+{
+    "name": "web-api-manager",
+    "version": "0.9.27",
+    "description": "Tools to generate Web API managing browser extensions for Firefox and Chrome.",
+    "author": "Peter Snyder <psnyde2@uic.edu> (https://www.cs.uic.edu/~psnyder/)",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "tar": "^4.4.8"
+    },
+    "homepage": "https://github.com/snyderp/web-api-manager",
+    "bugs": {
+        "url": "https://github.com/snyderp/web-api-manager/issues",
+        "email": "psnyde2@uic.edu"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/snyderp/web-api-manager.git"
+    },
+    "keywords": [
+        "browser extension",
+        "privacy",
+        "security"
+    ],
+    "contributors": [],
+    "scripts": {
+        "clean": "rm -Rf dist/",
+        "bundle": "node_modules/gulp/bin/gulp.js clean && node_modules/gulp/bin/gulp.js && node_modules/web-ext/bin/web-ext -s add-on -a dist build --overwrite-dest",
+        "firefox": "node_modules/cross-env/dist/bin/cross-env.js npm run bundle && node_modules/web-ext/bin/web-ext -s add-on run --ignore-files '**/*.js'",
+        "lint": "node_modules/eslint/bin/eslint.js .",
+        "lint:fix": "node_modules/eslint/bin/eslint.js --fix .",
+        "test": "npm run clean; npm run bundle && ln -s `ls dist/` dist/webapi_manager.zip && node_modules/cross-env/dist/bin/cross-env.js node_modules/mocha/bin/mocha test/unit/*.js test/functional/*.js --only-local-tests",
+        "test:watch": "node_modules/cross-env/dist/bin/cross-env.js npm test --watch",
+        "test:all": "npm run clean; npm run bundle && ln -s `ls dist/` dist/webapi_manager.zip && node_modules/cross-env/dist/bin/cross-env.js node_modules/mocha/bin/mocha test/unit/*.js test/functional/*.js",
+        "test:unit": "npm run clean; npm run bundle && ln -s `ls dist/` dist/webapi_manager.zip && node_modules/cross-env/dist/bin/cross-env.js node_modules/mocha/bin/mocha test/unit/*.js"
+    },
+    "pre-push": {
+        "run": [
+            "lint"
+        ]
+    },
+    "devDependencies": {
+        "assert": "^1.4.1",
+        "cross-env": "^5.2.0",
+        "eslint": "^5.16.0",
+        "geckodriver": "^1.16.2",
+        "gulp": "^4.0.2",
+        "mocha": "^4.1.0",
+        "pre-commit": "^1.2.2",
+        "selenium-webdriver": "^3.6.0",
+        "sjcl": "^1.0.7",
+        "uri-js": "^3.0.2",
+        "vue": "^2.5.16",
+        "vue-template-compiler": "^2.5.16",
+        "web-ext": "^3.0.0"
+    }
+}

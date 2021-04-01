@@ -1,0 +1,83 @@
+<section class="container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="nav-item">
+            <a href="#blocking-rules"
+                :class="[dataActiveTab === 'blocking-rules' ? 'active' : '', 'nav-link']"
+                @click="setActiveTab">Blocking Rules</a>
+        </li>
+        <li role="presentation" class="nav-item">
+            <a href="#import-export"
+                :class="[dataActiveTab === 'import-export' ? 'active' : '', 'nav-link']"
+                @click="setActiveTab">Import / Export</a>
+        </li>
+        <li role="advanced-options" class="nav-item">
+            <a href="#advanced-options"
+                :class="[dataActiveTab === 'advanced-options' ? 'active' : '', 'nav-link']"
+                @click="setActiveTab">Advanced Options</a>
+        </li>
+    </ul>
+
+    <div class="tab-content pt-2">
+        <div role="tabpanel"
+           :class="['tab-pane', dataActiveTab === 'blocking-rules' ? 'active' : '']"
+               id="blocking-rules">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Enter <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Match_patterns">domain matching rules</a>
+                        on the right, to create a new blocking rule.  On the
+                        right, select which functionality should be blocked for
+                        hosts matching each rule.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <blocking-rules
+                        :data-patterns="dataPatterns"
+                        :data-selected-pattern="dataSelectedPattern"
+                        :data-allowing-all-patterns="dataAllowingAllPatterns"
+                        :data-blocking-any-patterns="dataBlockingAnyPatterns">
+                    </blocking-rules>
+                </div>
+
+                <div class="col-8">
+                    <web-api-standards
+                        :data-should-log="dataShouldLog"
+                        :data-current-standard-ids="dataCurrentStandardIds"
+                        :data-selected-pattern="dataSelectedPattern"
+                        :data-template-standards="dataTemplateStandards"
+                        :data-template-custom-blocked-features="dataTemplateCustomBlockedFeatures"
+                        :data-current-custom-blocked-features="dataCurrentCustomBlockedFeatures">
+                    </web-api-standards>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel"
+           :class="['tab-pane', dataActiveTab === 'import-export' ? 'active' : '']"
+               id="import-export">
+            <div class="row">
+                <div class="col12">
+                    <import-export
+                        :data-patterns="dataPatterns"
+                        :data-current-standard-ids="dataCurrentStandardIds">
+                    </import-export>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel"
+           :class="['tab-pane', dataActiveTab === 'advanced-options' ? 'active' : '']"
+               id="advanced-options">
+            <div class="row">
+                <div class="col">
+                    <advanced-options
+                        :data-should-log="dataShouldLog"
+                        :data-block-cross-frame="dataBlockCrossFrame">
+                    </advanced-options>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

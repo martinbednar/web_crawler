@@ -1,0 +1,13 @@
+{
+  "info": {
+    "id": 51,
+    "origId": "Proximity Events",
+    "name": "Proximity Events",
+    "url": "https://w3c.github.io/proximity/",
+    "catId": "hardware"
+  },
+  "features": [
+    "window.ondeviceproximity",
+    "window.onuserproximity"
+  ]
+}

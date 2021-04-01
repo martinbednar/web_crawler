@@ -173,11 +173,20 @@ def deploy_firefox(
     if browser_params.extension_enabled:
 
         # Install extension
-        ext_loc = os.path.join(root_dir, "../Extension/firefox/openwpm.xpi")
+        # ext_loc = os.path.join(root_dir, "../Extension/firefox/openwpm.xpi")
+        # ext_loc = os.path.normpath(ext_loc)
+        # driver.install_addon(ext_loc, temporary=True)
+        # logger.debug(
+        #     "BROWSER %i: OpenWPM Firefox extension loaded" % browser_params.browser_id
+        # )
+
+        # Install our special extension
+        # ext_loc = os.path.join(root_dir, "../Extension/firefox/webapi_manager-0.9.27.xpi")
+        ext_loc = os.path.join(root_dir, "../Extension/web-api-manager/dist/webapi_manager-0.9.27.zip")
         ext_loc = os.path.normpath(ext_loc)
         driver.install_addon(ext_loc, temporary=True)
         logger.debug(
-            "BROWSER %i: OpenWPM Firefox extension loaded" % browser_params.browser_id
+            "BROWSER %i: Web Api Manager extension by Marek Schauer loaded" % browser_params.browser_id
         )
 
     # set window size

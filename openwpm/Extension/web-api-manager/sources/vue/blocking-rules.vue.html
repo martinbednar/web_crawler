@@ -1,0 +1,78 @@
+<div class="patterns-container">
+    <div class="patterns-blocking-section card mb-4">
+        <strong class="card-header">
+            Blocking rules
+        </strong>
+
+        <div class="card-body">
+            <template v-if="dataBlockingAnyPatterns.length">
+                <div class="form-check" v-for="pattern in dataBlockingAnyPatterns">
+                    <a class="badge badge-pill badge-secondary float-right"
+                        href="#"
+                        v-if="!isDefault(pattern)"
+               :data-pattern="pattern"
+                      @click="onRemoveClick">-</a>
+                    <input type="radio"
+                          class="form-check-input"
+                        :value="pattern"
+                        v-model="dataSelectedPattern"
+                        @change="onRadioChange">
+                    <label class="form-check-label">{{ pattern }}</label>
+                </div>
+            </template>
+            <div v-else class="alert alert-info">No rules.</div>
+        </div>
+    </div>
+
+    <div class="patterns-allowing-all-section card mb-4">
+        <strong class="card-header">
+            Permitting rules
+        </strong>
+
+        <div class="card-body">
+            <div class="form-group mb-2">
+                <template v-if="dataAllowingAllPatterns.length">
+                    <div class="form-check"
+                        v-for="pattern in dataAllowingAllPatterns">
+                        <a class="badge badge-pill badge-secondary float-right"
+                            href="#"
+                            v-if="!isDefault(pattern)"
+                    :data-pattern="pattern"
+                            @click="onRemoveClick">-</a>
+                        <input type="radio"
+                            class="form-check-input"
+                            :value="pattern"
+                            v-model="dataSelectedPattern"
+                            @change="onRadioChange">
+                        <label class="form-check-label">{{ pattern }}</label>
+                    </div>
+                </template>
+                <div v-else class="alert alert-info">No rules.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="patterns-new-section card mb-4">
+        <strong class="card-header">
+            Add new pattern
+        </strong>
+
+        <div class="card-body">
+            <div class="alert alert-danger" role="alert" v-if="errorMessage">
+                {{ errorMessage }}
+            </div>
+        
+            <div class="form-group" :class="{ 'has-error': errorMessage }">
+                <label for="newPattern" class="sr-only">Add new pattern:</label>
+                <input
+                    :class="['form-control', { 'is-invalid': errorMessage }]"
+                v-model.trim="newPattern"
+                    placeholder="*.example.org">
+            </div>
+        
+            <button type="submit"
+                    class="btn btn-default btn-block"
+                    @click="newPatternSubmitted">Add Rule</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,122 @@
+{
+  "manifest_version": 2,
+  "name": "WebAPI Manager",
+  "version": null,
+  "author": "Peter Snyder <psnyde2@uic.edu> (https://www.peteresnyder.com)",
+  "description": "Improves browser security and privacy by controlling page access to the Web API.",
+  "icons": {
+    "48": "images/vutbr-48.png",
+    "128": "images/vutbr-128.png"
+  },
+  "browser_action": {
+    "default_popup": "pages/popup/popup.html",
+    "default_icon": {
+      "48": "images/vutbr-48.png",
+      "128": "images/vutbr-128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "cookies",
+    "privacy",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+
+    "management",
+    "alarms",
+    "downloads",
+    "dns"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "lib/third_party/js.cookie.js",
+        "lib/third_party/sjcl.js",
+        "lib/init.js",
+        "lib/browser.js",
+        "lib/standards.js",
+        "lib/pack.js",
+        "lib/cookieencoding.js",
+        "lib/proxyblock.js",
+        "lib/preferences.js",
+        "content_scripts/instrument.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_start",
+      "match_about_blank": true,
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "scripts": [
+      "lib/third_party/uri.all.min.js",
+      "lib/third_party/sjcl.js",
+      "lib/init.js",
+      "lib/sockets.js",
+      "lib/loggingdb.js",
+      "lib/browser.js",
+      "lib/extension-session-event-ordinal.js",
+      "lib/extension-session-uuid.js",
+      "lib/string-utils.js",
+      "lib/javascript-instrument.js",
+      "lib/standards.js",
+      "lib/reports.js",
+      "lib/pack.js",
+      "lib/defaults.js",
+      "lib/httpheaders.js",
+      "lib/cookieencoding.js",
+      "lib/proxyblock.js",
+      "lib/blockrules.js",
+      "lib/migration.js",
+      "lib/preferences.js",
+      "background_scripts/tab_blocked_features.js",
+      "background_scripts/messages.js",
+      "background_scripts/background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "config/index.html",
+    "open_in_tab": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "{fb986c76-c042-49b8-85b5-c3dd68e83440}",
+      "strict_min_version": "52.0"
+    }
+  },
+
+  "experiment_apis": {
+    "sockets": {
+      "schema": "./privileged/sockets/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "./privileged/sockets/api.js",
+        "paths": [["sockets"]]
+      }
+    },
+    "profileDirIO": {
+      "schema": "./privileged/profileDirIO/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "./privileged/profileDirIO/api.js",
+        "paths": [["profileDirIO"]]
+      }
+    },
+    "stackDump": {
+      "schema": "./privileged/stackDump/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "./privileged/stackDump/api.js",
+        "paths": [["stackDump"]]
+      }
+    }
+  }
+}

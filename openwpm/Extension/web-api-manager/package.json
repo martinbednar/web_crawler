@@ -43,6 +43,7 @@
         "cross-env": "^5.2.0",
         "eslint": "^5.16.0",
         "geckodriver": "^1.16.2",
+        "gremlins.js": "^2.2.0",
         "gulp": "^4.0.2",
         "mocha": "^4.1.0",
         "pre-commit": "^1.2.2",

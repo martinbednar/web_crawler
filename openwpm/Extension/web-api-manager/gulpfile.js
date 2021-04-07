@@ -13,6 +13,7 @@ gulp.task("clean", async function () {
         ["add-on", "lib", "standards.js"],
         ["add-on", "lib", "third_party", "sjcl.js"],
         ["add-on", "lib", "third_party", "uri.all.min.js"],
+        ["add-on", "lib", "third_party", "gremlins.min.js"],
         ["add-on", "config", "js", "third_party", "vue.runtime.min.js"],
     ];
 
@@ -122,6 +123,10 @@ gulp.task("default", async function() {
     const sjclSourcePath = path.join("node_modules", "sjcl", "sjcl.js");
     const sjclDestPath = path.join("add-on", "lib", "third_party", "sjcl.js");
     fs.copyFileSync(sjclSourcePath, sjclDestPath);
+
+    const gremlinSourcePath = path.join("node_modules", "gremlins.js", "dist", "gremlins.min.js");
+    const gremlinsDestPath = path.join("add-on", "lib", "third_party", "gremlins.min.js");
+    fs.copyFileSync(gremlinSourcePath, gremlinsDestPath);
 
     const vueSourcePath = path.join("node_modules", "vue", "dist", "vue.runtime.min.js");
     const vueDestPath = path.join("add-on", "config", "js", "third_party", "vue.runtime.min.js");

@@ -83,11 +83,14 @@
             args: []
         };
 
-        browserLib.getRootObject().runtime.sendMessage({
-            namespace: 'javascript-instrumentation',
-            type: 'logCall',
-            data: toBeSent
-        });
+        browserLib.getRootObject().runtime.sendMessage([
+            "interceptedFeatureAccess",
+            {
+                namespace: 'javascript-instrumentation',
+                type: 'logCall',
+                data: toBeSent
+            }
+        ]);
     });
 
     script.appendChild(doc.createTextNode(scriptToInject));

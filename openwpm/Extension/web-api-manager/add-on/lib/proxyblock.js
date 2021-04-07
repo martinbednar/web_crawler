@@ -163,7 +163,7 @@
             const handlers = {
                 get: function (target, property, reciever) {
                     // logKeyPath(keyPath);
-                    console.log('I am in get trap', keyPath);
+                    // console.log('I am in get trap', keyPath);
 
                     if (recursionGuardCounter === 1000) {
                         recursionGuardCounter = 0;
@@ -186,11 +186,11 @@
                         return createBlockingProxy(pathToRef(keyPath), handlers);
                     }
 
-                    console.log('I am gonna return get from Reflect');
+                    // console.log('I am gonna return get from Reflect');
                     return value;
                 },
                 apply: function (target, reciever, args) {
-                    console.log('I am in apply trap', keyPath);
+                    // console.log('I am in apply trap', keyPath);
                     logKeyPath(keyPath);
                     return Reflect.apply(target, reciever, args);
                 },

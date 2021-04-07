@@ -23,7 +23,6 @@
          * @param sender
          */
         static processCallsAndValues(data, sender) {
-            console.log('!!!!', data, '!!!!');
             const update = {};
             update.extension_session_uuid = extensionSessionUuid;
             update.event_ordinal = incrementedEventOrdinal.incrementedEventOrdinal();
@@ -52,7 +51,7 @@
                 update.arguments = escapeString(JSON.stringify(data.args));
             }
 
-            console.log('If I was in OpenWPM, I would send this to the send method on loggingdb.js:', update);
+            // console.log('If I was in OpenWPM, I would send this to the send method on loggingdb.js:', update);
 
             return update;
         }
@@ -71,7 +70,7 @@
             this.pendingRecords = [];
             /*private*/
             this.crawlID = null;
-            console.log('JavaScript Instrumentation class has been instantiated');
+            // console.log('JavaScript Instrumentation class has been instantiated');
         }
 
         /**
@@ -79,12 +78,13 @@
          */
         listen() {
             this.onMessageListener = (message, sender) => {
-                console.log("I am receiving some message:", message);
+                const [label, data] = message;
+                // console.log("I am receiving some message:", message);
                 if (
-                    message.namespace &&
-                    message.namespace === "javascript-instrumentation"
+                    data.namespace &&
+                    data.namespace === "javascript-instrumentation"
                 ) {
-                    this.handleJsInstrumentationMessage(message, sender);
+                    this.handleJsInstrumentationMessage(data, sender);
                 }
             };
             
@@ -102,7 +102,7 @@
             switch (message.type) {
             case "logCall":
             case "logValue":
-                console.log('I am here, handling the JsInstrumentationMessage, mesage=', message);
+                // console.log('I am here, handling the JsInstrumentationMessage, mesage=', message);
                 const update = JavascriptInstrument.processCallsAndValues(
                     message.data,
                     sender,

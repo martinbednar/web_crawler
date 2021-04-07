@@ -8,8 +8,8 @@
     const {browserLib, tabBlockedFeaturesLib, blockRulesLib} = window.WEB_API_MANAGER;
     const rootObject = browserLib.getRootObject();
 
-    const onMessageListener = (preferences, request, sender, sendResponse) => {
-        const [label, data] = request;
+    const onMessageListener = (preferences, requesteeeee, sender, sendResponse) => {
+        const [label, data] = requesteeeee;
 
         // Message sent from the configuration page, specifiying that the
         // user has changed some settings regarding which standards should
@@ -168,6 +168,10 @@
 
             const tabReport = tabBlockedFeaturesLib.getTabReport(data.tabId);
             sendResponse(["blockedFeaturesReportResponse", tabReport && tabReport.toJSON()]);
+            return;
+        }
+
+        if (label === "interceptedFeatureAccess") {
             return;
         }
 

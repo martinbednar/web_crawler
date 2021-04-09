@@ -81,6 +81,7 @@
                 const [label, data] = message;
                 // console.log("I am receiving some message:", message);
                 if (
+                    data &&
                     data.namespace &&
                     data.namespace === "javascript-instrumentation"
                 ) {

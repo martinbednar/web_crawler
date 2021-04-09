@@ -1,10 +1,10 @@
 (function () {
     "use strict";
     
-    document.addEventListener('DOMContentLoaded', fireContentLoadedEvent, false);
+    // document.addEventListener('DOMContentLoaded', fireContentLoadedEvent, false);
     
-    function fireContentLoadedEvent () {
-        const horde = gremlins.createHorde();
-        horde.unleash();
-    }
+    // function fireContentLoadedEvent () {
+    //     const horde = gremlins.createHorde();
+    //     horde.unleash();
+    // }
 }());

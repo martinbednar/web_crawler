@@ -64,7 +64,7 @@
     const eventName = "__wamEvent" + blockingSettings.randNonce;
    
     doc.addEventListener(eventName, event => {
-        browserLib.getRootObject().runtime.sendMessage(["blockedFeature", event.detail]);
+        // browserLib.getRootObject().runtime.sendMessage(["blockedFeature", event.detail]);
         // Send also the message that will be caught and sent to OpenWPM Logger
         const toBeSent = {
             ordinal: 0,

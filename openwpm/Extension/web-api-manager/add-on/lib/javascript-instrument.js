@@ -102,6 +102,7 @@
         handleJsInstrumentationMessage(message, sender) {
             switch (message.type) {
             case "logCall":
+            case "logTcfDetectionlogCall":
             case "logValue":
                 // console.log('I am here, handling the JsInstrumentationMessage, mesage=', message);
                 const update = JavascriptInstrument.processCallsAndValues(

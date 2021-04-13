@@ -171,7 +171,7 @@
             return;
         }
 
-        if (label === "interceptedFeatureAccess") {
+        if (label === "interceptedFeatureAccess" || label === "interceptedFeatureAccess") {
             return;
         }
 

@@ -47,7 +47,8 @@
         "lib/proxyblock.js",
         "lib/preferences.js",
         "content_scripts/instrument.js",
-        "content_scripts/gremlins.js"
+        "content_scripts/gremlins.js",
+        "content_scripts/tcf_detector.js"
       ],
       "matches": [
         "<all_urls>"

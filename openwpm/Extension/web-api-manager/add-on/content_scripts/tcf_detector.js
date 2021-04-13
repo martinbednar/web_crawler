@@ -11,22 +11,20 @@
         
         
         const log_tcf = function() {
-            setTimeout(function () {
-                const tcf_iframe    = document.querySelector('iframe[name="__tcfapiLocator"]');
-                const tcf_function  = window.__tcfapi;
-    
-                if (tcf_iframe !== undefined && tcf_function !== undefined && typeof window.__tcfapi === "function") {
-                    // The TCF is detected, logging this information
-                    console.log('The TCF is detected');
+            const tcf_iframe    = document.querySelector('iframe[name="__tcfapiLocator"]');
+            const tcf_function  = window.__tcfapi;
 
-                    // TODO - trigger an event
-                    const doc = window.document;
-                    const blockEvent = new window.CustomEvent('__wam_tcf_detected', {});
-                    document.dispatchEvent.call(doc, blockEvent);
-                } else {
-                    // console.log('The TCF was not detected', 'tcf_iframe:', tcf_iframe, 'tcf_function:', tcf_function);
-                }
-            }, 5000);
+            if (tcf_iframe !== undefined && tcf_function !== undefined && typeof window.__tcfapi === "function") {
+                // The TCF is detected, logging this information
+                console.log('The TCF is detected');
+
+                // TODO - trigger an event
+                const doc = window.document;
+                const blockEvent = new window.CustomEvent('__wam_tcf_detected', {});
+                document.dispatchEvent.call(doc, blockEvent);
+            } else {
+                // console.log('The TCF was not detected', 'tcf_iframe:', tcf_iframe, 'tcf_function:', tcf_function);
+            }
         }
 
         /**

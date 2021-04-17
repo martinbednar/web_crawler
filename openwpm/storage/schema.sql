@@ -246,3 +246,15 @@ CREATE TABLE IF NOT EXISTS dns_responses (
   is_TRR INTEGER, 
   time_stamp DATETIME NOT NULL
  );
+
+/* 
+# Site links
+ */
+CREATE TABLE IF NOT EXISTS site_links (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  browser_id INTEGER NOT NULL,
+  visit_id INTEGER NOT NULL,
+  site_url TEXT,
+  links_count INTEGER,
+  subpage_links TEXT
+ );

@@ -172,22 +172,22 @@ def deploy_firefox(
     # Add extension
     if browser_params.extension_enabled:
 
-        # Install extension
-        # ext_loc = os.path.join(root_dir, "../Extension/firefox/openwpm.xpi")
-        # ext_loc = os.path.normpath(ext_loc)
-        # driver.install_addon(ext_loc, temporary=True)
-        # logger.debug(
-        #     "BROWSER %i: OpenWPM Firefox extension loaded" % browser_params.browser_id
-        # )
-
-        # Install our special extension
-        # ext_loc = os.path.join(root_dir, "../Extension/firefox/webapi_manager-0.9.27.xpi")
-        ext_loc = os.path.join(root_dir, "../Extension/web-api-manager/dist/webapi_manager-0.9.27.zip")
-        ext_loc = os.path.normpath(ext_loc)
-        driver.install_addon(ext_loc, temporary=True)
-        logger.debug(
-            "BROWSER %i: Web Api Manager extension by Marek Schauer loaded" % browser_params.browser_id
-        )
+        if browser_params.web_api_manager_enabled:
+            # Install our special extension
+            ext_loc = os.path.join(root_dir, "../Extension/web-api-manager/dist/webapi_manager-0.9.27.zip")
+            ext_loc = os.path.normpath(ext_loc)
+            driver.install_addon(ext_loc, temporary=True)
+            logger.debug(
+                "BROWSER %i: Web Api Manager extension loaded" % browser_params.browser_id
+            )
+        else:
+            # Install extension
+            ext_loc = os.path.join(root_dir, "../Extension/firefox/openwpm.xpi")
+            ext_loc = os.path.normpath(ext_loc)
+            driver.install_addon(ext_loc, temporary=True)
+            logger.debug(
+                "BROWSER %i: OpenWPM Firefox extension loaded" % browser_params.browser_id
+            )
 
     # set window size
     driver.set_window_size(*DEFAULT_SCREEN_RES)

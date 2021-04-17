@@ -79,6 +79,7 @@ class BrowserParams(DataClassJsonMixin):
     """
 
     extension_enabled: bool = True
+    web_api_manager_enabled: bool = True
     cookie_instrument: bool = True
     js_instrument: bool = False
     js_instrument_settings: List[Union[str, dict]] = field(
@@ -128,7 +129,7 @@ class ManagerParams(DataClassJsonMixin):
         metadata=DCJConfig(encoder=path_to_str, decoder=str_to_path),
     )
     testing: bool = False
-    memory_watchdog: bool = False
+    memory_watchdog: bool = True
     process_watchdog: bool = False
     num_browsers: int = 1
     _failure_limit: Optional[int] = None

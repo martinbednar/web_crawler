@@ -39,7 +39,8 @@ with open(inputFilePath, newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     for row in spamreader:
         url = row[1]
-        sites.append(formaturl(url))
+        if not (url in sites):
+            sites.append(formaturl(url))
 
 sites = sites[offset_start:offset_end]
 print(sites)

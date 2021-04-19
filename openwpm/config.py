@@ -132,7 +132,7 @@ class ManagerParams(DataClassJsonMixin):
     memory_watchdog: bool = True
     process_watchdog: bool = False
     num_browsers: int = 1
-    _failure_limit: Optional[int] = None
+    _failure_limit: Optional[int] = 10000
 
     @property
     def failure_limit(self) -> int:

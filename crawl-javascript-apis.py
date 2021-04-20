@@ -12,11 +12,13 @@ import argparse
 import csv
 import re
 import json
+import functools
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--sites", help="path to JSON file containing information about sites to be crawled, required attributes are \"site\" and \"links\"", type=str)
-parser.add_argument("--start", help="index to start on", type=int)
-parser.add_argument("--offset", help="how many websites should be taken", type=int)
+parser.add_argument("--browsers", help="number of browsers to be spawned", type=int, required=True)
+parser.add_argument("--sites", help="path to JSON file containing information about sites to be crawled, required attributes are \"site\" and \"links\"", type=str, required=True)
+parser.add_argument("--start", help="index to start on", type=int, required=True)
+parser.add_argument("--offset", help="how many websites should be taken", type=int, required=True)
 parser.add_argument("--ghostery", help="run the crawl with ghostery", action="store_true")
 args = parser.parse_args()
 
@@ -28,7 +30,7 @@ inputFilePath = getattr(args, 'sites')
 
 
 # The list of sites that we wish to crawl
-NUM_BROWSERS = 1
+NUM_BROWSERS = int(getattr(args, 'browsers'))
 sites = []
 with open(getattr(args, 'sites'), "r") as json_file:
     data = json.load(json_file)

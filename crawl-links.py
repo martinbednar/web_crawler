@@ -20,13 +20,15 @@ def formaturl(url):
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--sites", help="path to CSV file containing sites to crawl in format (id, domain)", type=str)
-parser.add_argument("--start", help="offset to start on", type=int)
+parser.add_argument("--sites", help="path to CSV file containing sites to crawl in format (id, domain)", type=str, required=True)
+parser.add_argument("--start", help="offset to start on", type=int, required=True)
+parser.add_argument("--length", help="length of resulting list", type=int, required=True)
 args = parser.parse_args()
 
 args = parser.parse_args()
 offset_start = getattr(args, 'start')
-offset_end = getattr(args, 'start') + 100
+result_length = getattr(args, 'length')
+offset_end = getattr(args, 'start') + result_length
 
 inputFilePath = getattr(args, 'sites')
 
@@ -43,7 +45,6 @@ with open(inputFilePath, newline='') as csvfile:
             sites.append(formaturl(url))
 
 sites = sites[offset_start:offset_end]
-print(sites)
 
 # Loads the default ManagerParams
 # and NUM_BROWSERS copies of the default BrowserParams
@@ -71,14 +72,6 @@ for i in range(NUM_BROWSERS):
 # Update TaskManager configuration (use this for crawl-wide settings)
 manager_params.data_directory = Path("./datadir/")
 manager_params.log_directory = Path("./datadir/")
-
-# memory_watchdog and process_watchdog are useful for large scale cloud crawls.
-# Please refer to docs/Configuration.md#platform-configuration-options for more information
-# manager_params.memory_watchdog = True
-# manager_params.process_watchdog = True
-
-
-
 
 
 

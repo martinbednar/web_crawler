@@ -38,5 +38,8 @@ echo 'Installing firefox.'
 echo 'Building extension.'
 ./scripts/build-extension.sh
 
+echo 'Building Web API Manager'
+./scripts/build-wam-extension.sh
+
 echo 'Installation complete, activate your new environment by running:'
 echo 'conda activate openwpm'

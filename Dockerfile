@@ -1,5 +1,10 @@
 FROM krallin/ubuntu-tini:bionic
 
+ENV browsers=--browsers=1
+ENV sites=--sites=./sites_to_be_visited.json
+ENV start=--start=0
+ENV offset=--offset=1
+
 SHELL ["/bin/bash", "-c"]
 
 # Update ubuntu and setup conda
@@ -35,4 +40,4 @@ ENV FIREFOX_BINARY /opt/firefox-bin/firefox-bin
 # Pass arguments through docker run. Example:
 # docker build -t web_crawler .
 # docker run web_crawler --browsers=1 --sites=./sites_to_be_visited.json --start=0 --offset=1
-CMD [ "python", "crawl-javascript-apis.py"]
+CMD python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset}

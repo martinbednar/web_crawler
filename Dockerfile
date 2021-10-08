@@ -1,4 +1,5 @@
-FROM krallin/ubuntu-tini:bionic
+FROM jupyter/base-notebook
+USER root
 
 ENV browsers=--browsers=1
 ENV sites=--sites=./sites_to_be_visited.json

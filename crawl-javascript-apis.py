@@ -19,7 +19,7 @@ parser.add_argument("--browsers", help="number of browsers to be spawned", type=
 parser.add_argument("--sites", help="path to JSON file containing information about sites to be crawled, required attributes are \"site\" and \"links\"", type=str, required=True)
 parser.add_argument("--start", help="index to start on", type=int, required=True)
 parser.add_argument("--offset", help="how many websites should be taken", type=int, required=True)
-parser.add_argument("--ghostery", help="run the crawl with ghostery", action="store_true")
+parser.add_argument("--privacy", help="run the crawl with privacy extension", action="store_true")
 args = parser.parse_args()
 
 args = parser.parse_args()
@@ -57,11 +57,13 @@ for i in range(NUM_BROWSERS):
     browser_params[i].callstack_instrument = False
     # Record DNS resolution
     browser_params[i].dns_instrument = False
-    # We want default extension, not a Web API manager
-    browser_params[i].web_api_manager_enabled = True
-    if getattr(args, 'ghostery'):
-        # Load our custom profile
-        browser_params[i].seed_tar = Path("./ghostery-profile.tar.gz")
+    # We want install our modified Web API manager, not a default extension
+    browser_params[i].extension_enabled = True
+    browser_params[i].extension_default = False
+    browser_params[i].extension_web_api_manager = True
+    if getattr(args, 'privacy'):
+        # We want install extension increesing privacy
+        browser_params[i].extension_privacy = True
 
 
 # Update TaskManager configuration (use this for crawl-wide settings)

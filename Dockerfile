@@ -42,4 +42,6 @@ ENV FIREFOX_BINARY /opt/firefox-bin/firefox-bin
 # Pass arguments through docker run. Example:
 # docker build -t web_crawler .
 # docker run web_crawler --browsers=1 --sites=./sites_to_be_visited.json --start=0 --offset=1
-CMD python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset} ${privacy}
+CMD python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset}
+#ENTRYPOINT python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset}
+

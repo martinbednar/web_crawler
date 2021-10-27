@@ -1,0 +1,29 @@
+# Jak postupovat při přípravě nástroje pro Kubernetes?
+
+Stáhnout aplikaci Kubernetes Lens App, která umožňuje vzdálené připojení a ovládání Kubernetes serveru (https://k8slens.dev/).
+
+
+
+Base image nastavit na čisté Ubuntu: https://hub.docker.com/_/ubuntu.
+Prostudovat kubernetes - zejména:
+	https://kubernetes.io/docs/home/
+	https://kubernetes.io/docs/concepts/
+	https://docs.docker.com/compose/
+	možnosti deploymentu
+	services - jaké jsou
+	https://kubernetes.io/docs/concepts/
+Připravit yaml - konfigurák - mrknout, jestli by se nedal použít nějaký, co už má OpenWPM v sobě.
+Podíval se na Kamilův yaml a inspirovat se: 
+https://github.com/kjerabek/big-data-kubernetes-cluster-setup/tree/master/nginx
+	nepotřebuji ale ingress a service, protože moje komunikace jde do venku nebo z venku dovnitř
+	nastavit počet replik (třeba 5)
+	nastavit mód deamon (ne stateful)
+	nastavti, co se má dělat, jakmile se skript deployne: image spustit jako job - start script (CMD a/nebo ENTRYPOINT)
+
+
+
+
+
+Nice to have - použít native mode s virtuálním displejem - jako to má Kamil v projektu:
+https://github.com/kjerabek/Firefox-traffic-capture-DOH-enabled
+Pro virtuální displej používá: xvfb

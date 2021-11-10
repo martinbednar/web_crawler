@@ -4,7 +4,7 @@ SHELL ["/bin/bash", "-c"]
 
 ENV sites=--sites=./opensource_crawl/opensource_homepages.csv
 ENV start=--start=0
-ENV length=--offset=500
+ENV length=--length=500
 
 # Update ubuntu and setup conda
 # adapted from: https://hub.docker.com/r/conda/miniconda3/dockerfile
@@ -36,7 +36,4 @@ RUN mv firefox-bin /opt/firefox-bin
 ENV FIREFOX_BINARY /opt/firefox-bin/firefox-bin
 
 # Setting crawl-links.py as the default command
-# Pass arguments through docker run. Example:
-# docker build -t crawl_links .
-# docker run crawl_links --sites=./opensource_crawl/opensource_homepages.csv --start=501 --length=1000
 CMD python crawl-links.py ${sites} ${start} ${length}

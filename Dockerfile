@@ -1,13 +1,12 @@
-FROM jupyter/base-notebook
-USER root
-
-ENV browsers=--browsers=1
-ENV sites=--sites=./sites_to_be_visited.json
-ENV start=--start=0
-ENV offset=--offset=1
-ENV privacy=--privacy
+FROM krallin/ubuntu-tini:bionic
 
 SHELL ["/bin/bash", "-c"]
+
+ENV browsers=--browsers=3
+ENV sites=--sites=./oupensource_sites_to_be_visited.json
+ENV start=--start=0
+ENV offset=--offset=5513
+ENV privacy=--privacy
 
 # Update ubuntu and setup conda
 # adapted from: https://hub.docker.com/r/conda/miniconda3/dockerfile

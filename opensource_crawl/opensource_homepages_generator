@@ -7,25 +7,34 @@ Smazání ftp://, # a pod.
 
 
 Předzpracování - seřazení pozpátku lexikograficky:
-rev < input | sort | rev
+rev < opensource_homepages | sort | rev | tac > opensource_homepages_rev
+rm ./opensource_homepages
+mv opensource_homepages_rev opensource_homepages
 
 
-Sloučení http a https:
+Skript merge_duplicate_sites:
+Sloučení http a https.
 (např.:
-http://www.airspayce.com/mikem/bcm2835/
-https://www.airspayce.com/mikem/bcm2835/
+https://www.flameeyes.eu
+http://www.flameeyes.eu
 )
 
-Sloučení www a bez www - není potřeba - žádný výskyt.
-
-
-Sloučení adres s konečným a bez konečného lomítka
+Sloučení www a bez www.
 (např.:
-https://wordnet.princeton.edu/
-https://wordnet.princeton.edu
+http://www.netbsd.org
+https://netbsd.org
+)
+
+
+Sloučení adres s konečným a bez konečného lomítka (jiného znaku)
+(např..
+https://www.vim.org
+https://www.vim.org}
+http://www.vim.org
 )
 
 
 
 Manuálně promazané domény (-> značí webovou stránku, která byla ze skupiny ponechána):
+zatím žádné
 

@@ -1,43 +1,30 @@
 may_be_duplicat = False
-merged_http = []
+merged = []
 
 
 with open("opensource_homepages") as file:
 	for line in file:
-		line = line.rstrip()
+		current = line.rstrip()
+		while not current[-1].isalnum():
+			current = current[:-1]
 		
-		if may_be_duplicat and line.startswith("https://"):
-			may_be_duplicat = False
-			if merged_http[-1][7:] == line[8:]:
-				print(line[8:])
-				print(merged_http[-1][7:])
-				merged_http[-1] = line
+		if len(merged) > 0:
+			current_cleaned = current.removeprefix("https://www.").removeprefix("http://www.").removeprefix("https://").removeprefix("http://")
+			previous = merged[-1]
+			previous_cleaned = previous.removeprefix("https://www.").removeprefix("http://www.").removeprefix("https://").removeprefix("http://")
+			if current_cleaned == previous_cleaned:
+				print(previous)
+				print(current)
+				if previous.startswith("http://") and current.startswith("https://"):
+					merged[-1] = previous.replace("http://", "https://")
 			else:
-				merged_http.append(line)
-		elif not line.startswith("https://") and line.startswith("http://"):
-			may_be_duplicat = True
-			merged_http.append(line)
+				merged.append(current)
 		else:
-			merged_http.append(line)
-
-
-may_be_duplicat = False
-merged_slash = []
-
-
-for line in merged_http:
-	if not line.endswith("/") and len(merged_slash) > 0:
-		if merged_slash[-1][:-1] == line:
-			print(merged_slash[-1][:-1])
-			print(line)
-		else:
-			merged_slash.append(line)
-	else:
-		merged_slash.append(line)
+			merged.append(current)
 
 
 
 with open('opensource_homepages_merged', 'w') as f:
-	for item in merged_slash:
+	for item in merged:
 		f.write("%s\n" % item)
 

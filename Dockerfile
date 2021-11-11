@@ -3,9 +3,9 @@ FROM krallin/ubuntu-tini:bionic
 SHELL ["/bin/bash", "-c"]
 
 ENV browsers=--browsers=3
-ENV sites=--sites=./oupensource_sites_to_be_visited.json
+ENV sites=--sites=./opensource_sites_to_be_visited.json
 ENV start=--start=0
-ENV offset=--offset=5513
+ENV offset=--offset=5271
 ENV privacy=--privacy
 
 # Update ubuntu and setup conda

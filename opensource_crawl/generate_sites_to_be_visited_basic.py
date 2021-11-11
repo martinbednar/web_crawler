@@ -2,7 +2,7 @@ output = '{"sites": ['
 
 i = 1
 
-with open("opensource_homepages") as file:
+with open("opensource_homepages_merged") as file:
     for line in file:
     	line = line.rstrip()
     	output += '{"site_url": "' + line + '", "links_count": 1, "links": ["' + line + '"], "tranco_rating": "' + str(i) + '"}, '

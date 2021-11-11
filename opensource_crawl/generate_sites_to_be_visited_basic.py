@@ -11,6 +11,6 @@ with open("opensource_homepages") as file:
 output = output[:-2]
 output += ']}'
 
-with open('oupensource_sites_to_be_visited.json', 'w') as f:
+with open('opensource_sites_to_be_visited.json', 'w') as f:
     f.write(output)
 

@@ -261,7 +261,6 @@ https://github.com/lz4/lz4
 https://github.com/python-lz4/python-lz4
 https://store.kde.org/p/999915/
 https://www.oasis-open.org/docbook/xml/simple/4.1.2.5/
-http://www.airspayce.com/mikem/bcm2835/
 https://www.airspayce.com/mikem/bcm2835/
 http://sysd.org/stas/node/35
 https://github.com/strukturag/libde265
@@ -292,7 +291,6 @@ https://www.codon.org.uk/~mjg59/libx86/
 https://www.remlab.net/ndisc6/
 https://groups.csail.mit.edu/cis/md6
 https://github.com/getmail6/getmail6
-http://www.skarnet.org/software/s6/
 https://www.skarnet.org/software/s6/
 http://klub.com.pl/dhcpv6/
 https://www.thc.org/thc-ipv6/
@@ -401,7 +399,6 @@ http://common-lisp.net/project/alexandria/
 http://www.logarithmic.net/pfh/synaesthesia
 https://apps.kde.org/cervisia/
 http://download.huzheng.org/ja/
-http://download.huzheng.org/ja
 https://pypi.org/project/sphinx-jinja/
 https://0xacab.org/liberate/backupninja
 https://github.com/nhatminhle/cofoja
@@ -498,7 +495,6 @@ https://www.winstonsmith.info/julia/elettra/
 https://github.com/janestreet/async_extra
 https://github.com/fcitx/fcitx-table-extra
 https://gitlab.gnome.org/GNOME/gnome-themes-extra/
-https://gitlab.gnome.org/GNOME/gnome-themes-extra
 https://github.com/WayfireWM/wayfire-plugins-extra
 https://github.com/basvandijk/concurrent-extra
 https://github.com/Ultimaker/Cura
@@ -577,7 +573,6 @@ https://www.floodgap.com/retrotech/xa/
 https://userbase.kde.org/K3b
 https://wiki.gnome.org/Apps/Baobab
 https://github.com/shirok/Gauche-mecab
-http://taku910.github.io/mecab/
 https://taku910.github.io/mecab/
 http://ohnopub.net/lcab/
 https://www.gnu.org/software/fisicalab
@@ -668,7 +663,6 @@ http://uazu.net/fidlib/
 https://pypi.org/project/pyftpdlib/
 https://github.com/pallets/cachelib
 https://github.com/sarugaku/resolvelib/
-https://github.com/sarugaku/resolvelib
 http://lclevy.free.fr/adflib/
 https://pypi.org/project/rdflib/
 https://sourceforge.net/projects/giflib/
@@ -724,7 +718,6 @@ https://pypi.org/project/distlib/
 https://github.com/ygrek/ocaml-extlib
 https://github.com/RPi-Distro/RTIMULib
 https://www.gnu.org/software/gnulib/
-https://www.gnu.org/software/gnulib
 https://github.com/UU-ComputerScience/uulib
 https://sourceware.org/newlib/
 https://github.com/jaor/iwlib
@@ -764,7 +757,6 @@ https://github.com/basho/riak_pb
 https://savannah.nongnu.org/projects/tpb/
 https://github.com/ClusterLabs/libqb
 https://github.com/httprb/form_data.rb
-http://fredrikj.net/arb/
 https://fredrikj.net/arb/
 https://github.com/judofyr/duktape.rb
 https://github.com/jmespath/jmespath.rb
@@ -824,7 +816,6 @@ https://dev.mysql.com/downloads/connector/odbc/
 http://www.ch-werner.de/rubyodbc/
 https://www.gnu.org/software/libc/
 http://www.nongnu.org/avr-libc/
-http://www.fefe.de/dietlibc/
 https://www.fefe.de/dietlibc/
 https://github.com/TimothyGu/libilbc
 https://sourceforge.net/projects/smbc/
@@ -857,7 +848,6 @@ https://github.com/tplgy/cppcodec
 https://commons.apache.org/proper/commons-codec/
 https://www.openttd.org/en/download-catcodec
 https://pypi.org/project/latexcodec/
-http://visq.github.io/language-c/
 https://visq.github.io/language-c/
 https://github.com/ruby-amqp/evented-spec
 https://www.freedesktop.org/wiki/Specifications/sound-theme-spec
@@ -1081,7 +1071,6 @@ http://www.lysator.liu.se/~nisse/misc/
 http://www.ibiblio.org/pub/Linux/system/network/misc/
 http://peterodding.com/code/vim/misc/
 https://www.dockapps.net/wmmisc
-http://download.ebz.epson.net/dsc/search/01/search/?OSC
 https://download.ebz.epson.net/dsc/search/01/search/?OSC
 https://github.com/sass/sassc
 https://www.gnu.org/software/cssc/
@@ -1186,7 +1175,6 @@ https://github.com/coreos/go-etcd
 https://github.com/etcd-io/etcd
 https://github.com/coreos/zetcd
 https://unicode.org/ucd/
-http://www.unicode.org/ucd/
 https://www.unicode.org/ucd/
 https://github.com/qnikst/kbdd
 https://pypi.org/project/pytest-bdd/
@@ -1259,7 +1247,6 @@ https://code.google.com/p/ooo2gd/
 https://gitlab.gnome.org/GNOME/gupnp-igd
 https://www.boutell.com/gd/
 https://github.com/troglobit/sysklogd
-http://www.openwall.com/scanlogd/
 https://www.openwall.com/scanlogd/
 http://0pointer.de/lennart/projects/ifplugd/
 https://freebsoft.org/speechd
@@ -1272,7 +1259,6 @@ http://freshmeat.net/projects/dvorakng/?topic_id
 http://musicbrainz.org/doc/libdiscid
 https://github.com/taem/cd-discid
 https://github.com/JonnyJD/python-discid
-http://www.vdr-portal.de/board/thread.php?threadid
 https://www.vdr-portal.de/board/thread.php?threadid
 http://www.polypux.org/projects/read-edid/
 https://github.com/linuxaudio/a2jmidid
@@ -1286,7 +1272,6 @@ https://scripts.sil.org/cms/scripts/page.php?site_id
 https://httpd.apache.org/mod_fcgid/
 https://bugs.gentoo.org/show_bug.cgi?id
 https://github.com/rails/globalid
-http://jcp.org/en/jsr/detail?id
 https://jcp.org/en/jsr/detail?id
 https://bugs.chromium.org/p/chromium/issues/detail?id
 https://www.parallelrealities.co.uk/games/metalBlobSolid/
@@ -1302,7 +1287,6 @@ https://github.com/larsenwork/monoid
 https://chazomaticus.github.io/asteroid/
 https://github.com/ekmett/void
 http://math.smsu.edu/~erik/software.php?id
-http://www.linuxgamepublishing.com/info.php?id
 https://www.linuxgamepublishing.com/info.php?id
 http://caesar.logiqx.com/php/emulator.php?id
 https://natura.di.uminho.pt/wiki/doku.php?id
@@ -1313,7 +1297,6 @@ https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverId
 http://www.ncbi.nlm.nih.gov/books/bv.fcgi?rid
 https://sourceforge.net/projects/linssid/
 https://www.paratype.ru/cinfo/news.asp?NewsId
-http://www.vim.org/scripts/script.php?script_id
 https://www.vim.org/scripts/script.php?script_id
 https://vim.sourceforge.io/scripts/script.php?script_id
 https://pypi.org/project/pyacoustid/
@@ -1746,7 +1729,6 @@ https://www.reiner-sct.de/
 http://bashmark.coders-net.de
 http://www.cadsoft.de
 http://pear.phpunit.de/
-http://pear.phpunit.de
 https://phpunit.de
 https://www.labmeasurement.de
 https://www.klayout.de/
@@ -2039,7 +2021,6 @@ https://github.com/paul-rouse/mysql-simple
 https://github.com/halostatue/transaction-simple
 https://github.com/michaelt/lens-simple
 https://pholser.github.com/jopt-simple/
-https://pholser.github.com/jopt-simple
 https://github.com/kodi-pvr/pvr.iptvsimple
 https://invent.kde.org/frameworks/kpeople
 https://code.google.com/p/microblog-purple/
@@ -2280,7 +2261,6 @@ http://plugin.org.uk/timemachine/
 https://docs.docker.com/machine/
 https://github.com/eventmachine/eventmachine
 https://www.emacswiki.org/emacs/Whine
-http://www.skarnet.org/software/execline/
 https://www.skarnet.org/software/execline/
 https://rubygems.org/gems/rb-readline
 https://hackage.haskell.org/package/readline
@@ -2640,7 +2620,6 @@ https://github.com/jgm/zip-archive
 https://github.com/Changaco/setuptools_scm_git_archive
 https://www.gnu.org/software/alive/
 https://github.com/MarkusEh/vdr-plugin-live
-http://tug.org/texlive/
 https://tug.org/texlive/
 http://www.tug.org/texlive/
 https://apps.kde.org/kio_gdrive/
@@ -3105,7 +3084,6 @@ https://pyxattr.k1024.org/
 https://www.openh264.org/
 https://www.siedler25.org/
 http://www.linux-ax25.org/
-http://www.linux-ax25.org
 http://gnusim8085.org
 https://rtrlib.realmv6.org/
 https://www.bt747.org
@@ -3152,14 +3130,12 @@ https://llvmlite.pydata.org/
 https://pandas.pydata.org/
 https://xarray.pydata.org/
 http://xdelta.org/
-http://www.courier-mta.org/
 https://www.courier-mta.org/
 https://lukkinosat.altervista.org/
 https://www.lua.org/
 http://www.dnsjava.org/
 http://download.huzheng.org/mova.org/
 http://newspost.unixcab.org/
-http://rostlab.org/
 https://rostlab.org/
 https://librepcb.org/
 https://mariadb.org/
@@ -3172,12 +3148,10 @@ https://www.tornadoweb.org/
 http://www.svgalib.org/
 https://www.ta-lib.org/
 https://www.indilib.org/
-http://www.hamlib.org
 https://www.hamlib.org
 http://www.clanlib.org/
 https://gmplib.org/
 http://www.htslib.org/
-http://www.htslib.org
 http://www.flintlib.org/
 https://matplotlib.org/
 http://www.zygrib.org/
@@ -3213,12 +3187,10 @@ https://www.csync.org/
 http://www.muchsync.org/
 http://www.corosync.org/
 https://pandoc.org/
-https://pandoc.org
 http://phpdoc.org
 https://www.phpdoc.org
 https://yardoc.org/
 https://www.sphinx-doc.org/
-https://www.sphinx-doc.org
 http://www.lcdproc.org/
 http://www.mpqc.org/
 https://www.mhonarc.org/
@@ -3241,14 +3213,12 @@ https://bino3d.org/
 http://www.theseus3d.org/
 https://www.librecad.org/
 https://docs.kicad.org/
-http://www.kicad.org
 https://www.kicad.org
 https://www.openscad.org/
 https://mocha.jamesmead.org/
 http://jamesmead.org/
 http://www.spread.org
 https://xmonad.org/
-https://xmonad.org
 http://armagetronad.org/
 https://sabnzbd.org/
 https://www.unrealircd.org/
@@ -3295,7 +3265,6 @@ http://xrootd.org/
 https://www.openttd.org/
 https://www.circlemud.org/
 https://owncloud.org/
-https://owncloud.org
 https://www.postfwd.org/
 https://spice-space.org/
 https://www.spice-space.org/
@@ -3304,7 +3273,6 @@ http://www.tcptrace.org/
 https://www.xfce.org/
 https://www.libreoffice.org
 http://www.darkice.org/
-http://www.libimobiledevice.org/
 https://www.libimobiledevice.org/
 http://www.scala-ide.org
 http://padre.perlide.org/
@@ -3322,7 +3290,6 @@ https://utils.kde.org
 https://kde.org/
 https://minuet.kde.org/
 https://edu.kde.org
-http://cldr.unicode.org/
 https://cldr.unicode.org/
 http://www.psicode.org/
 https://www.orgmode.org/
@@ -3378,17 +3345,13 @@ http://santuario.apache.org/
 https://avro.apache.org/
 https://zookeeper.apache.org/
 https://apr.apache.org/
-http://myfaces.apache.org/
 https://myfaces.apache.org/
 https://tomcat.apache.org/
-https://tomcat.apache.org
 https://thrift.apache.org/
 http://jackrabbit.apache.org/
 https://ant.apache.org/
 http://felix.apache.org/
-http://felix.apache.org
 https://pdfbox.apache.org/
-https://pdfbox.apache.org
 https://velocity.apache.org
 http://www.geeqie.org
 https://cmake.org/
@@ -3418,7 +3381,6 @@ https://glade.gnome.org/
 https://help.gnome.org/
 https://developer.gnome.org/
 https://www.gnome.org/
-https://www.gnome.org
 https://desmume.org/
 http://www.xsane.org/
 http://www.capstone-engine.org/
@@ -3437,7 +3399,6 @@ http://www.radare.org
 https://virtualsquare.org
 http://wrapper.tanukisoftware.org/
 http://www.projectlibre.org/
-http://www.pcre.org/
 https://www.pcre.org/
 https://pipewire.org/
 http://www.tripwire.org/
@@ -3470,7 +3431,6 @@ http://www.repoze.org
 http://www.tcpdf.org/
 https://prawnpdf.org/
 http://librdf.org/
-http://www.jabref.org/
 https://www.jabref.org/
 https://www.colordiff.org/
 https://www.libpgf.org/
@@ -3494,7 +3454,6 @@ https://pyamg.org
 http://rxtx.qbang.org/
 http://www.mimedefang.org/
 https://julialang.org/
-https://julialang.org
 https://www.scala-lang.org/
 https://ziglang.org/
 https://crystal-lang.org
@@ -3508,7 +3467,6 @@ https://www.abs-lang.org/
 https://racket-lang.org/
 https://www.typescriptlang.org
 https://www.rust-lang.org/
-https://www.rust-lang.org
 https://www.ruby-lang.org/
 http://hylang.org/
 http://www.mypy-lang.org/
@@ -3517,7 +3475,6 @@ http://www.liblogging.org
 https://da.speling.org
 https://fo.speling.org/
 http://www.hping.org
-http://munin-monitoring.org/
 https://munin-monitoring.org/
 https://pgrouting.org/
 https://frrouting.org/
@@ -3535,7 +3492,6 @@ http://www.gprolog.org/
 https://www.swi-prolog.org/
 https://www.graylog.org
 https://gnupg.org/
-http://www.gnupg.org/
 https://www.gnupg.org/
 http://www.opencsg.org
 https://nanomsg.org/
@@ -3543,7 +3499,6 @@ https://xdebug.org/
 http://www.tug.org/
 https://cairosvg.org/
 https://qelectrotech.org/
-http://www.mpich.org/
 https://www.mpich.org/
 https://speedcrunch.org/
 https://haystacksearch.org/
@@ -3563,7 +3518,6 @@ https://www.libssh.org/
 https://www.zsh.org/
 https://mpmath.org/
 http://jmespath.org
-http://icedtea.classpath.org
 https://icedtea.classpath.org
 https://www.fluidsynth.org
 http://redcloth.org/
@@ -3594,12 +3548,10 @@ http://mlmmj.org/
 http://www.smlnj.org
 https://proj.org/
 https://audiofile.68k.org/
-http://flatpak.org/
 https://flatpak.org/
 http://onestepback.org/
 https://www.nethack.org/
 https://msgpack.org/
-https://msgpack.org
 http://www.phrack.org/
 https://haskellstack.org
 https://www.openstack.org/
@@ -3608,7 +3560,6 @@ http://www.rundeck.org
 https://www.flycheck.org/
 https://www.imagemagick.org/
 http://jmock.org/
-http://jmock.org
 https://easymock.org/
 http://www.oddsock.org
 http://www.pluginaweek.org
@@ -3625,9 +3576,7 @@ https://gr-framework.org/
 https://www.mltframework.org/
 https://www.django-rest-framework.org/
 https://dask.org/
-http://www.asterisk.org/
 https://www.asterisk.org/
-https://www.asterisk.org
 http://fetk.org/
 https://www.webkitgtk.org
 https://www.gtk.org/
@@ -3659,13 +3608,11 @@ https://xfs.wiki.kernel.org/
 https://dracut.wiki.kernel.org
 https://kernel.org/
 https://www.kernel.org/
-https://www.kernel.org
 https://gegl.org/
 https://www.virtualgl.org/
 https://www.dbmail.org/
 http://www.procmail.org/
 https://aerc-mail.org
-http://www.sendmail.org/
 https://www.sendmail.org/
 https://notmuchmail.org/
 https://www.claws-mail.org/
@@ -3678,7 +3625,6 @@ http://www.xbill.org/
 http://www.qhull.org
 http://opam.ocaml.org/
 https://ocaml.org/
-https://ocaml.org
 https://www.latex2html.org/
 http://selfhtml.org
 http://kxml.org/
@@ -3720,7 +3666,6 @@ https://www.prelude-siem.org
 https://snowballstem.org/
 http://xffm.org/
 https://psi-im.org/
-https://psi-im.org
 https://gajim.org/
 http://opendkim.org/
 https://openkim.org
@@ -3734,7 +3679,6 @@ https://www.vim.org}
 https://www.exim.org/
 http://www.ezmlm.org
 https://www.gtkmm.org/
-https://www.gtkmm.org
 https://openxcom.org/
 http://www.jdom.org
 https://www.chocolate-doom.org
@@ -3768,9 +3712,7 @@ http://rails-i18n.org/
 https://www.fail2ban.org/
 http://spell-norwegian.alioth.debian.org/
 https://debian.org/
-https://debian.org
 https://www.debian.org/
-https://www.debian.org
 https://xapian.org/
 https://www.xapian.org/
 https://libreswan.org/
@@ -3828,7 +3770,6 @@ https://routino.org/
 https://devmanual.gentoo.org/
 https://packages.gentoo.org/
 https://prefix.gentoo.org/
-https://prefix.gentoo.org
 https://www.sysrepo.org
 https://www.zotero.org
 https://ostinato.org/
@@ -3851,7 +3792,6 @@ https://docs.python-zeep.org/
 http://java.freehep.org/
 https://pdfgrep.org/
 http://www.gnustep.org/
-http://www.gnustep.org
 https://www.pjsip.org/
 https://www.7-zip.org/
 http://www.info-zip.org/
@@ -3877,7 +3817,6 @@ https://dbus.freedesktop.org/
 https://libopenraw.freedesktop.org/
 https://telepathy.freedesktop.org/
 https://mate-desktop.org/
-https://mate-desktop.org
 http://www.rdesktop.org/
 https://www.ntop.org/
 https://www.lzop.org/
@@ -3906,19 +3845,15 @@ https://midnight-commander.org
 https://www.blender.org
 http://www.netwinder.org/
 http://virt-manager.org/
-http://virt-manager.org
 https://virt-manager.org/
 http://www.digger.org/
 http://largo.windowmaker.org/
-http://www.windowmaker.org/
 https://www.windowmaker.org/
 http://schismtracker.org/
 http://repeatmasker.org/
 https://www.jubler.org/
 http://www.mangler.org/
-http://www.linuxsampler.org/
 https://www.linuxsampler.org/
-https://www.linuxsampler.org
 https://www.dvdstyler.org/
 http://hmmer.org/
 http://lcr.vdr-developer.org/
@@ -3926,9 +3861,7 @@ http://jxplorer.org/
 https://gmusicbrowser.org/
 https://sqlitebrowser.org/
 https://www.qutebrowser.org/
-http://www.netsurf-browser.org/
 https://www.netsurf-browser.org/
-https://www.netsurf-browser.org
 https://www.midori-browser.org/
 https://otter-browser.org/
 https://www.tvbrowser.org
@@ -3941,7 +3874,6 @@ https://signing-milter.org/
 https://soundconverter.org/
 https://www.libdivecomputer.org
 https://jupyter.org/
-https://jupyter.org
 https://www.fsarchiver.org
 http://www.ivtvdriver.org/
 http://ceres-solver.org/
@@ -3966,7 +3898,6 @@ https://www.maxr.org/
 http://www.yacas.org/
 http://twig.sensiolabs.org/
 http://yaboot.ozlabs.org/
-http://yaboot.ozlabs.org
 https://www.strawbs.org/
 http://xemacs.org/}
 http://www.xemacs.org/
@@ -3995,7 +3926,6 @@ https://www.openafs.org/
 https://bindfs.org/
 http://linux-nfs.org/
 https://libguestfs.org/
-https://libguestfs.org
 https://www.cryfs.org/
 https://txt2tags.org
 https://www.qgis.org/
@@ -4021,7 +3951,6 @@ http://elfutils.org/
 https://mailutils.org/
 https://dnssec-tools.org/
 https://www.dnssec-tools.org/
-https://www.dnssec-tools.org
 https://bnd.bndtools.org/
 https://www.smartmontools.org
 http://shapelib.maptools.org/
@@ -4038,13 +3967,11 @@ http://www.maradns.org/
 http://www.cgns.org/
 https://www.monitoring-plugins.org/
 https://www.vamp-plugins.org/
-https://www.vamp-plugins.org
 http://nagios-plugins.org/
 http://www.vdrskins.org/
 https://www.scons.org/
 http://plugins.guifications.org/
 http://www.rosettacommons.org
-http://www.bareos.org/
 https://www.bareos.org/
 https://xiphos.org/
 https://www.seabios.org/
@@ -4096,7 +4023,6 @@ https://directory.fedoraproject.org/
 http://kbd-project.org/
 http://guake-project.org/
 http://www.sane-project.org/
-http://www.sane-project.org
 https://www.doctrine-project.org/
 http://kexi-project.org/
 http://www.spek-project.org/
@@ -4111,7 +4037,6 @@ https://nyx.torproject.org
 https://rr-project.org/
 http://ess.r-project.org/
 https://tea.ourproject.org/
-http://www.r-project.org/
 https://www.r-project.org/
 https://gramps-project.org/
 https://freenetproject.org/
@@ -4154,7 +4079,6 @@ https://pngquant.org/
 https://gmpclient.org/
 https://flent.org/
 https://www.enlightenment.org/
-https://www.enlightenment.org
 https://deluge-torrent.org/
 https://www.qbittorrent.org
 http://www.tuxpaint.org/
@@ -4165,28 +4089,22 @@ https://ruby-rbot.org/
 https://www.dovecot.org/
 https://openshot.org/
 https://www.openshot.org/
-http://www.rsnapshot.org
 https://www.rsnapshot.org
 http://www.jpilot.org/
 http://www.xpilot.org/
 http://www.parrot.org/
-http://coffeescript.org/
 https://coffeescript.org/
 https://letsencrypt.org/
 https://photoqt.org/
 https://www.openclipart.org/
 https://corebird.baedert.org/
 http://libvirt.org
-http://www.libvirt.org/
 https://www.libvirt.org/
-https://www.libvirt.org
 https://www.snort.org/
-https://www.snort.org
 https://www.icecast.org/
 http://www.peercast.org
 http://www.xcdroast.org/
 http://www.p4est.org/
-http://www.megaglest.org/
 https://www.megaglest.org/
 http://www.simpletest.org/
 http://www.memtest.org/
@@ -4209,9 +4127,7 @@ http://www.qemu.org
 http://www.dosemu.org/
 https://projects.vdr-developer.org/projects/plg-menuorg
 https://gcc.gnu.org/
-https://gcc.gnu.org
 http://dianara.nongnu.org/
-http://libpipeline.nongnu.org/
 https://libpipeline.nongnu.org/
 http://normalize.nongnu.org/
 http://adonthell.nongnu.org/
@@ -4302,7 +4218,6 @@ http://www.haproxy.org
 https://mitmproxy.org/
 http://gnometoaster.rulez.org/
 http://www.bluez.org/
-http://www.bluez.org
 https://crawl.develz.org
 https://picard.musicbrainz.org
 https://openvz.org/
@@ -4357,7 +4272,6 @@ https://github.com/ckolivas/interbench/
 https://github.com/akopytov/sysbench
 https://github.com/janestreet/ppx_bench
 https://geant4.web.cern.ch/
-https://geant4.web.cern.ch
 https://github.com/Infinidat/munch
 https://github.com/fatiando/pooch
 http://0xcc.net/ruby-bsearch/
@@ -4507,7 +4421,6 @@ https://github.com/jaraco/jaraco.path/
 https://directory.fsf.org/wiki/Chrpath
 https://www.gnu.org/software/classpath
 https://github.com/sissaschool/elementpath/
-http://commons.apache.org/jxpath/
 https://commons.apache.org/jxpath/
 https://github.com/jnicklas/xpath
 https://github.com/solidsnack/wcwidth/
@@ -4765,7 +4678,6 @@ http://www.unifont.org/lasi
 https://github.com/sahlberg/libiscsi
 https://github.com/amietn/vcsi
 https://github.com/tehmaze/ansi
-http://fusesource.github.io/jansi/
 https://fusesource.github.io/jansi/
 https://rubyworks.github.io/ansi/
 https://github.com/kodi-pvr/pvr.vdr.vnsi
@@ -4833,7 +4745,6 @@ http://www.speech.kth.se/snack/
 https://www.netlib.org/scalapack/
 https://www.netlib.org/clapack/
 https://www.netlib.org/lapack/
-https://www.netlib.org/lapack
 https://github.com/Blosc/bloscpack
 https://fperrad.frama.io/lua-MessagePack
 https://linbox-team.github.io/fflas-ffpack/
@@ -5083,7 +4994,6 @@ http://scripts.sil.org/padauk
 http://zsync.moria.org.uk/
 http://www.cegui.org.uk/
 http://plugin.org.uk/
-http://plugin.org.uk
 https://www.cabextract.org.uk/
 https://sites.google.com/site/nihilistorguk/
 https://www.nihilist.org.uk/
@@ -5115,7 +5025,6 @@ https://github.com/GaloisInc/cereal
 https://uscilab.github.io/cereal/
 http://bgoglin.free.fr/llgal/
 https://github.com/Kozea/pygal/
-http://lostpackets.de/khal/
 https://lostpackets.de/khal/
 http://www.deer-run.com/~hal/
 https://github.com/dbcli/pgspecial
@@ -5217,7 +5126,6 @@ https://launchpad.net/scim-bridge.el
 https://pypi.org/project/wheel/
 https://github.com/dbrock/volume-el
 https://github.com/rejeep/f.el
-http://www.colm.net/open-source/ragel/
 https://www.colm.net/open-source/ragel/
 https://wiki.gnome.org/Projects/Rygel
 https://github.com/magnars/dash.el
@@ -5466,11 +5374,9 @@ http://www.svgalib.org/rus/rexima.html
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking-ena.html
 http://www.securiteam.com/tools/5MP0L2KFPA.html
 https://www.videolan.org/developers/libdvbcsa.html
-http://www.alsa-project.org/~iwai/alsa.html
 https://www.alsa-project.org/~iwai/alsa.html
 https://www.oracle.com/java/technologies/jta.html
 http://gatling.ikk.sztaki.hu/~kissg/pd/pista/pista.html
-http://www.bouncycastle.org/java.html
 https://www.bouncycastle.org/java.html
 https://tukaani.org/xz/java.html
 http://vertigo.fme.vutbr.cz/~stibor/dagrab.html
@@ -6051,7 +5957,6 @@ https://puppet.com/docs/puppetdb/latest/index.html
 https://patsy.readthedocs.io/en/latest/index.html
 http://www.nemethi.de/tablelist/index.html
 http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
-http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 https://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 https://www.oracle.com/technetwork/database/database-technologies/instant-client/overview/index.html
 https://ocserv.gitlab.io/www/index.html
@@ -6451,7 +6356,6 @@ http://www.ut2003.com/
 https://flam3.com/
 http://www.unrealtournament2004.com/
 http://www.live555.com/
-http://www.memtest86.com/
 https://www.memtest86.com/
 http://foo2zjs.rkkda.com/
 http://alef.hagilda.com/
@@ -6468,7 +6372,6 @@ https://www.phpbb.com/
 https://www.mongodb.com
 http://rebase.neb.com
 https://www.yesodweb.com/
-https://www.yesodweb.com
 http://www.sinatrarb.com/
 https://capistranorb.com/
 https://mustache.github.com/
@@ -6485,7 +6388,6 @@ http://www.wings3d.com/
 https://play0ad.com/
 https://source.android.com/
 https://developer.android.com/
-https://developer.android.com
 https://mesonbuild.com/
 https://crimsonland.com/
 https://nuand.com/
@@ -6510,7 +6412,6 @@ http://guacamelee.com
 https://www.rawtherapee.com/
 http://simh.trailing-edge.com/
 https://www.bffordie.com/
-http://www.aerospike.com
 https://www.aerospike.com
 https://www.timescale.com/
 https://tailscale.com
@@ -6522,7 +6423,6 @@ https://ansible.com/
 https://www.ansible.com/
 https://cloud.google.com/
 http://seafile.com/
-http://www.opensource.apple.com/
 https://www.opensource.apple.com/
 http://badlandgame.com
 http://www.brokenagegame.com
@@ -6541,11 +6441,8 @@ http://www.baudline.com/
 https://www.vendetta-online.com
 https://www.skype.com/
 https://www.idsoftware.com/
-https://www.idsoftware.com
 http://qmmp.ylsoftware.com/
-http://qmmp.ylsoftware.com
 http://libre.adacore.com/
-http://libre.adacore.com
 http://prawn.majesticseacreature.com/
 https://ccl.clozure.com
 https://www.baldursgate.com/
@@ -6560,7 +6457,6 @@ http://www.tinyandbig.com/
 https://sysdig.com/
 https://yarnpkg.com
 http://slim-lang.com/
-http://sass-lang.com/
 https://sass-lang.com/
 https://www.audiocoding.com
 https://qqwing.com
@@ -6568,7 +6464,6 @@ https://www.libmng.com/
 https://www.rsyslog.com/
 http://pacparser.manugarg.com/
 https://www.geekbench.com/
-https://www.geekbench.com
 http://www.sphinxsearch.com/
 http://colorcode.laebisch.com/
 http://www.speedtouch.com/
@@ -6644,7 +6539,6 @@ http://www.portaudio.com/
 https://code.visualstudio.com
 https://resilio.com/
 https://www.supermicro.com/
-https://www.supermicro.com
 https://alt-ergo.ocamlpro.com
 https://www.tarsnap.com/
 http://www.freerdp.com/
@@ -6678,14 +6572,11 @@ https://www.teamviewer.com
 http://www.xnoise-media-player.com/
 http://whatisthor.com/
 https://www.openexr.com/
-https://www.openexr.com
 https://deviceatlas.com
 https://www.cockroachlabs.com
-http://puppetlabs.com/
 https://puppetlabs.com/
 https://www.bulletphysics.com/
 https://www.athena-scs.com/
-https://www.athena-scs.com
 https://www.tux4kids.com/
 https://www.teeworlds.com/
 http://www.eternal-lands.com
@@ -6726,7 +6617,6 @@ https://www.assaultandroidcactus.com/
 https://kb.ettus.com
 https://www.timesys.com/
 https://www.redhat.com/
-https://www.redhat.com
 https://transmissionbt.com/
 https://kube-project.com
 https://mono-project.com
@@ -6775,7 +6665,6 @@ https://www.dosbox.com/
 http://www.qwirx.com/
 https://fceux.com/
 https://www.kryoflux.com/
-https://www.kryoflux.com
 https://justgetflux.com/
 http://www.chickensforlinux.com/
 https://www.sdrplay.com
@@ -7080,7 +6969,6 @@ https://packages.debian.org/jessie/bsign
 https://github.com/rhboot/pesign
 https://github.com/jedisct1/minisign
 https://pypi.org/project/autobahn/
-http://www.openwall.com/john/
 https://www.openwall.com/john/
 https://github.com/ryancdotorg/ssh-chain
 https://wiki.gentoo.org/wiki/Project:Toolchain
@@ -7327,7 +7215,6 @@ https://sourceforge.net/projects/g15daemon/
 http://0pointer.de/lennart/projects/libdaemon/
 https://wiki.archlinux.org/index.php/Profile-sync-daemon
 https://github.com/marazmista/radeon-profile-daemon
-http://commons.apache.org/daemon/
 https://commons.apache.org/daemon/
 https://github.com/intel/thermal_daemon
 https://pypi.org/project/python-daemon/
@@ -7386,7 +7273,6 @@ https://www.emacswiki.org/emacs/KahlilHodgson
 https://github.com/google/gson/gson
 https://www.gnu.org/software/bison/
 https://www.seas.upenn.edu/~bcpierce/unison/
-http://www.nongnu.org/ratpoison/
 https://www.nongnu.org/ratpoison/
 https://invent.kde.org/frameworks/prison
 https://github.com/prometheus/prom2json
@@ -7526,7 +7412,6 @@ https://www.onerng.info/
 http://ikiwiki.info/
 http://picocli.info
 http://mygui.info/
-http://mygui.info
 https://github.com/jystic/network-info
 https://github.com/otakuto/crazydiskinfo
 http://math-www.uni-paderborn.de/~axel/tkinfo/
@@ -7632,7 +7517,6 @@ https://lldpd.github.io/
 https://company-mode.github.io/
 http://lfe.github.io/
 https://premake.github.io/
-https://premake.github.io
 http://gidole.github.io/
 https://proot-me.github.io
 https://tpm2-software.github.io/
@@ -7651,7 +7535,6 @@ https://streamlink.github.io/
 https://lightspark.github.io/
 https://proofgeneral.github.io/
 https://libigl.github.io/
-http://hunspell.github.io/
 https://hunspell.github.io/
 https://profanity-im.github.io
 https://gogglesmm.github.io
@@ -7723,7 +7606,6 @@ https://sourceforge.net/projects/libdvd-audio/
 https://www.freedesktop.org/wiki/Software/PulseAudio/
 https://devel.tlrmx.org/audio/
 https://www.music.mcgill.ca/~gary/rtaudio/
-http://kokkinizita.linuxaudio.org/linuxaudio/
 https://kokkinizita.linuxaudio.org/linuxaudio/
 http://people.csail.mit.edu/hubert/pyaudio/
 https://github.com/texstudio-org/texstudio
@@ -7768,7 +7650,6 @@ https://tkcvs.sourceforge.io/
 https://irrlicht.sourceforge.io/
 https://qwt.sourceforge.io/
 https://cdemu.sourceforge.io/
-https://cdemu.sourceforge.io
 https://vice-emu.sourceforge.io/
 https://regina-rexx.sourceforge.io/
 https://keybase.io/
@@ -7870,7 +7751,6 @@ https://emmet.io
 https://web.ars.de/netio/
 http://snapcraft.io/
 https://element.io/
-https://element.io
 https://doc.qt.io/
 https://www.qt.io/
 http://reactivex.io/
@@ -8043,7 +7923,6 @@ https://github.com/gnosek/fcgiwrap
 https://gitlab.com/fgallaire/cjkwrap
 https://github.com/hanslub42/rlwrap
 https://www.sourceware.org/systemtap/
-https://www.sourceware.org/systemtap
 http://www.munted.org.uk/programming/taptap/
 https://w1.fi/cgit/hostap/
 http://www.dcc.fc.up.pt/~vsc/Yap/
@@ -8124,7 +8003,6 @@ http://www.phy.duke.edu/~rgb/Beowulf/wulfware.php
 http://unihedron.com/projects/saydate/saydate.php
 http://libvirt.org/php/
 http://gkrellm.luon.net/mailwatch.php
-http://www.mavetju.org/unix/general.php
 https://www.mavetju.org/unix/general.php
 http://fuse-emulator.sourceforge.net/libspectrum.php
 http://xcave.free.fr/index-en.php
@@ -8226,7 +8104,6 @@ https://www.rsyslog.com/librelp/
 https://tools.suckless.org/x/sselp
 https://wiki.gnome.org/Apps/Yelp
 http://lpg.ticalc.org/prj_tilp/
-http://lpg.ticalc.org/prj_tilp
 https://github.com/coin-or/DyLP/
 http://www.astromatic.net/software/scamp
 https://github.com/jeremyw/stamp
@@ -8273,7 +8150,6 @@ https://github.com/mgorny/autoupnp/
 https://framagit.org/medoc92/npupnp
 http://raffi.at/view/code/aop
 http://www.ne.jp/asahi/linux/timecop/
-http://www.ne.jp/asahi/linux/timecop
 https://github.com/travisjeffery/timecop
 https://xmlgraphics.apache.org/fop/
 https://github.com/brain-workshop/brainworkshop
@@ -8311,7 +8187,6 @@ https://gitlab.gnome.org/GNOME/libgtop
 https://github.com/aristocratos/bashtop
 https://github.com/htop-dev/htop
 https://kde.org/plasma-desktop/
-https://kde.org/plasma-desktop
 https://github.com/nextcloud/desktop
 https://gitlab.gnome.org/GNOME/gnome-desktop/
 https://gitlab.gnome.org/GNOME/gnome-remote-desktop
@@ -8350,7 +8225,6 @@ https://github.com/nu-book/zxing-cpp
 https://github.com/jbeder/yaml-cpp
 https://wiki.ros.org/gencpp
 https://www.gnu.org/software/commoncpp/
-https://www.gnu.org/software/commoncpp
 https://github.com/open-source-parsers/jsoncpp
 https://github.com/ncmpcpp/ncmpcpp
 https://github.com/CopernicaMarketingSoftware/AMQP-CPP
@@ -8649,7 +8523,6 @@ https://www.dwheeler.com/flawfinder/
 https://github.com/mixxxdj/libkeyfinder
 https://github.com/symfony/finder
 https://launchpad.net/pidgin-birthday-reminder
-http://untroubled.org/qmail-autoresponder/
 https://untroubled.org/qmail-autoresponder/
 http://littlesvr.ca/asunder/
 http://games.technoplaza.net/chtdecoder/
@@ -9128,7 +9001,6 @@ https://gitlab.inria.fr/mpfr
 http://www.fastjet.fr/
 http://mumps.enseeiht.fr/
 https://gpac.wp.imt.fr/
-http://pari.math.u-bordeaux.fr/
 https://pari.math.u-bordeaux.fr/
 http://www.elspell.gr/
 https://github.com/rhinstaller/efibootmgr
@@ -9628,7 +9500,6 @@ https://sourceforge.net/projects/smbnetfs
 https://github.com/elazarl/go-bindata-assetfs
 https://launchpad.net/ecryptfs
 https://sourceforge.net/projects/lufs/
-http://commons.apache.org/vfs/
 https://commons.apache.org/vfs/
 https://wiki.gnome.org/Projects/gvfs
 https://github.com/bazelbuild/sandboxfs
@@ -9779,7 +9650,6 @@ https://github.com/indirect/haml-rails
 https://github.com/grosser/gettext_i18n_rails
 https://github.com/ai/autoprefixer-rails
 https://github.com/rails/rails/
-https://github.com/rails/rails
 https://github.com/rails/sass-rails
 https://github.com/rails/sprockets-rails
 https://gitweb.gentoo.org/proj/ruby-scripts.git/tree/eselect-rails
@@ -9865,7 +9735,6 @@ https://www.fatalmind.com/software/hatools/
 https://github.com/hughsie/appdata-tools/
 https://www.samba.org/~jelmer/ptabtools/
 https://sourceforge.net/projects/bbtools/
-https://sourceforge.net/projects/bbtools
 https://github.com/mdbtools/mdbtools
 https://sourceforge.net/projects/fbtools/
 https://sourceforge.net/projects/dvbtools
@@ -10075,7 +9944,6 @@ https://userbase.kde.org/KMail/Import_Options
 https://github.com/halostatue/minitest-bonus-assertions
 https://github.com/thuehlinger/daemons
 https://github.com/fpco/streaming-commons
-http://xml.apache.org/commons/
 https://xml.apache.org/commons/
 https://xmlgraphics.apache.org/commons/
 http://commons.apache.org/${PN#commons-}/
@@ -10096,7 +9964,6 @@ https://github.com/ZwS/qudos
 https://github.com/chrislit/abydos
 https://wiki.gnome.org/Apps/Videos
 https://trac.osgeo.org/geos/
-https://trac.osgeo.org/geos
 https://projects.coin-or.org/OS/
 https://code.google.com/p/sgabios/
 http://www.nongnu.org/vgabios/
@@ -10669,7 +10536,6 @@ https://jvyaml.dev.java.net/
 https://rngom.dev.java.net/
 https://xsom.dev.java.net/
 http://laf-plugin.dev.java.net/
-http://laf-plugin.dev.java.net
 http://sjsxp.dev.java.net/
 https://javaserverfaces.dev.java.net/
 https://swing-layout.dev.java.net/
@@ -10680,7 +10546,6 @@ https://apps.ankiweb.net
 http://dlib.net/
 https://www.alglib.net/
 https://wimlib.net/
-https://wimlib.net
 https://github.com/libnet/libnet
 http://www.packetfactory.net/libnet/
 https://zlib.net/
@@ -10722,7 +10587,6 @@ http://gsoap2.sourceforge.net
 http://gcolor2.sourceforge.net
 http://id3v2.sourceforge.net/
 http://sidplay2.sourceforge.net/
-http://sidplay2.sourceforge.net
 http://TSE3.sourceforge.net
 http://primer3.sourceforge.net/
 http://crm114.sourceforge.net/
@@ -10744,7 +10608,6 @@ http://triplea.sourceforge.net/
 http://labrea.sourceforge.net/
 http://portmedia.sourceforge.net/
 http://ganglia.sourceforge.net/
-http://ganglia.sourceforge.net
 http://sqlninja.sourceforge.net/
 http://artwizaleczapka.sourceforge.net/
 http://sinhala.sourceforge.net/
@@ -10859,7 +10722,6 @@ http://avarice.sourceforge.net/
 http://price.sourceforge.net/
 http://aopalliance.sourceforge.net/
 http://openjade.sourceforge.net/
-http://openjade.sourceforge.net
 http://openglide.sourceforge.net/
 http://lde.sourceforge.net/
 http://dia2code.sourceforge.net/
@@ -10910,7 +10772,6 @@ http://disktype.sourceforge.net/
 http://httptype.sourceforge.net
 http://hexcompare.sourceforge.net/
 http://wvware.sourceforge.net/
-http://wvware.sourceforge.net
 http://fuse.sourceforge.net/
 http://emacs-template.sourceforge.net/
 http://late.sourceforge.net/
@@ -11018,7 +10879,6 @@ http://mcj.sourceforge.net/
 http://pbnj.sourceforge.net/
 http://arj.sourceforge.net/
 http://lineak.sourceforge.net/
-http://lineak.sourceforge.net
 http://emacspeak.sourceforge.net/
 http://espeak.sourceforge.net/
 http://reoback.sourceforge.net/
@@ -11173,7 +11033,6 @@ http://offo.sourceforge.net
 http://sdlpango.sourceforge.net/
 http://wmbio.sourceforge.net/
 http://libcdaudio.sourceforge.net/
-http://libcdaudio.sourceforge.net
 http://daudio.sourceforge.net/
 http://dvd-audio.sourceforge.net
 http://pio.sourceforge.net/
@@ -11254,7 +11113,6 @@ http://statifier.sourceforge.net
 http://wavbreaker.sourceforge.net
 http://menumaker.sourceforge.net/
 http://libsmacker.sourceforge.net
-http://knocker.sourceforge.net
 https://knocker.sourceforge.net
 http://pipewalker.sourceforge.net/
 http://pauker.sourceforge.net/
@@ -11485,7 +11343,6 @@ http://docbook2x.sourceforge.net/
 http://hylafax.sourceforge.net
 http://gnu-hylafax.sourceforge.net/
 http://sax.sourceforge.net/
-http://sax.sourceforge.net
 http://jibx.sourceforge.net/
 http://g2ex.sourceforge.net/
 http://jspeex.sourceforge.net/
@@ -11604,7 +11461,6 @@ http://www.improbability.net/#wminet
 https://getdnsapi.net/
 https://www.cacti.net/
 https://www.musepack.net/
-https://www.musepack.net
 https://www.shellcheck.net/
 http://www.grimrock.net/
 https://adoptopenjdk.net
@@ -11615,7 +11471,6 @@ https://launchpad.net/netkit-telnet
 https://www.enigmail.net/
 https://yasm.tortall.net/
 http://aspell.net/
-http://aspell.net
 https://www.pgpool.net/
 http://www.snortsam.net/
 http://www.gkrellm.net/
@@ -11642,7 +11497,6 @@ https://epiar.net/
 https://moc.daper.net
 http://dvdisaster.net/
 http://www.tigr.net/
-http://www.tigr.net
 https://timewarrior.net
 http://gtkatlantic.gradator.net/
 http://augeas.net/
@@ -11737,7 +11591,6 @@ https://yachtclubgames.com/shovel-knight/
 https://github.com/avdi/naught
 https://github.com/sebastianbiallas/ht/
 https://www.huertatipografica.com/en/fonts/alegreya-sans-ht
-http://pallini.di.uniroma1.it/
 https://pallini.di.uniroma1.it/
 http://www.kyoceramita.it/
 http://www.iro.umontreal.ca/~gambit/
@@ -11864,9 +11717,7 @@ http://www.nongnu.org/oath-toolkit/
 https://pypi.org/project/python-xmp-toolkit/
 https://github.com/Autodesk/AutomaticComponentToolkit
 http://hannonlab.cshl.edu/fastx_toolkit/
-http://hannonlab.cshl.edu/fastx_toolkit
 https://gitlab.freedesktop.org/polkit/polkit/
-https://gitlab.freedesktop.org/polkit/polkit
 https://github.com/xavierleroy/cryptokit
 http://wiki.gnustep.org/index.php/HighlighterKit
 https://github.com/rootless-containers/rootlesskit
@@ -12036,12 +11887,10 @@ http://www.kde-look.org/content/show.php?content
 https://gnome-look.org/content/show.php/?content
 https://gnome-look.org/content/show.php?content
 https://www.gnome-look.org/content/show.php?content
-http://www.kde-apps.org/content/show.php?content
 https://www.kde-apps.org/content/show.php?content
 https://www.linux-apps.com/content/show.php?content
 https://store.kde.org/content/show.php/Pulse+Glass?content
 https://www.xfce-look.org/content/show.php/GANT?content
-http://www.yesodweb.com/book/persistent
 https://www.yesodweb.com/book/persistent
 https://github.com/drbrain/net-http-persistent
 https://pypi.org/project/pyrsistent/
@@ -12125,7 +11974,6 @@ https://invent.kde.org/graphics/kst-plot
 https://github.com/emacsorphanage/gnuplot
 https://github.com/audreyfeldroy/binaryornot
 https://sourceforge.net/projects/aboot/
-http://dev.chromium.org/chromium-os/chromiumos-design-docs/verified-boot
 https://dev.chromium.org/chromium-os/chromiumos-design-docs/verified-boot
 https://www.freedesktop.org/wiki/Software/systemd/systemd-boot/
 https://github.com/open-power/skiboot
@@ -12484,7 +12332,6 @@ http://toxygen.net/libgadu/
 https://dev.yorhel.nl/ncdu/
 http://lclint.cs.virginia.edu/
 http://genome.ucsc.edu/
-http://maude.cs.uiuc.edu/
 https://maude.cs.uiuc.edu/
 http://charm.cs.uiuc.edu/
 http://www.ks.uiuc.edu/
@@ -12501,7 +12348,6 @@ http://mmix.cs.hm.edu
 http://teyjus.cs.umn.edu/
 http://chuck.cs.princeton.edu/
 https://wordnet.princeton.edu/
-https://wordnet.princeton.edu
 http://vina.scripps.edu/
 http://autodock.scripps.edu/
 http://www.appinventor.mit.edu/
@@ -12562,7 +12408,6 @@ https://www.gnu.org/software/dejagnu/
 https://www.gnu.org/software/dotgnu
 https://xom.nu
 http://www.sogo.nu/
-http://www.sogo.nu
 http://x3270.bgp.nu/
 https://wiki.gnome.org/Projects/Caribou
 https://github.com/ocaml-community/biniou/
@@ -12784,7 +12629,6 @@ http://download.huzheng.org/zh_TW/
 https://lilyterm.luna.com.tw
 http://www.arphic.com.tw/
 http://freebsd.sinica.edu.tw/
-http://web.mit.edu/kerberos/www/
 https://web.mit.edu/kerberos/www/
 https://github.com/vapier/liblzw
 https://gforge.inria.fr/projects/gf2x/
@@ -13354,7 +13198,6 @@ https://www.datovka.cz/
 http://blaze.blackened.cz/
 http://epos.ufe.cz/
 http://gpl.arachne.cz/
-http://bird.network.cz
 https://bird.network.cz
 https://incron.aiken.cz/
 http://tucnak.nagano.cz
@@ -13387,6 +13230,5 @@ https://pypi.org/project/pytz/
 https://sourceware.org/dwz
 https://tukaani.org/xz/
 https://github.com/vasi/pixz
-http://jnovy.fedorapeople.org/pxz/
 https://jnovy.fedorapeople.org/pxz/
 https://www.freedesktop.org/wiki/Software/HarfBuzz

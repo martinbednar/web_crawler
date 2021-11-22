@@ -8,8 +8,9 @@ args = parser.parse_args()
 start = 0
 offset = 1
 privacy = getattr(args, 'privacy')
+number_of_loops = 1000
 
-while True:
+for _ in range(number_of_loops):
 	print("#############################################")
 	print("#######  C R A W L   S T A R T I N G  #######")
 	print("#############################################")

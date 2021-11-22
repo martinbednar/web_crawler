@@ -5,8 +5,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--privacy", help="run the crawls with privacy extension", action="store_true")
 args = parser.parse_args()
 
-start = 5000
-offset = 250
+start = 0
+offset = 1
 privacy = getattr(args, 'privacy')
 
 while True:
@@ -18,17 +18,23 @@ while True:
 	print("Privacy: " + str(privacy))
 	print("#############################################")
 	
-	abc = "./touch"
+	env_file = "start=--start=" + str(start) + "\noffset=--offset=" + str(offset) + "\n"
+	
 	if privacy:
 		volume_name = "crawl_" + str(start) + "_privacy"
-		cmd_vol = ["docker", "volume", "create", volume_name]
-		cmd_run = ["docker", "run", "-it", "--env-file", "docker_crawl_privacy.env", "--mount", "source=" + volume_name + ",destination=/opt/OpenWPM/datadir", "martan305/web_crawler"]
 	else:
+		env_file += "privacy=\n"
 		volume_name = "crawl_" + str(start)
-		cmd_vol = ["docker", "volume", "create", volume_name]
-		cmd_run = ["docker", "run", "-it", "--env-file", "docker_crawl.env", "--mount", "source=" + volume_name + ",destination=/opt/OpenWPM/datadir", "martan305/web_crawler"]
-		
+	
+	
+	with open('docker_crawl.env', 'w') as f:
+		f.write(env_file)
+	
+	cmd_vol = ["docker", "volume", "create", volume_name]
+	cmd_run = ["docker", "run", "-it", "--name=" + volume_name + "", "--env-file", "docker_crawl.env", "--mount", "source=" + volume_name + ",destination=/opt/OpenWPM/datadir", "martan305/web_crawler"]
+	
 	run(cmd_vol)
 	run(cmd_run)
 	
-	start += 1
+	start += offset
+

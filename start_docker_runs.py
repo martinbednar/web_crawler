@@ -60,7 +60,10 @@ def get_percent_successfully_crawled_websites(volume_name):
 def move_db_to_output_folder(volume_name, start, offset):
 	docker_volume_folder = get_docker_volume_folder(volume_name)
 	os.mkdir(volume_name)
-	filename = volume_name + "-" + str(start+offset)
+	if "_privacy" in volume_name:
+		filename = volume_name.replace("_privacy", "") + "-" + str(start+offset) + "_privacy"
+	else:
+		filename = volume_name + "-" + str(start+offset)
 	shutil.copyfile(docker_volume_folder + "crawl-data.sqlite", volume_name + "/" + filename + ".sqlite")
 	shutil.copyfile(docker_volume_folder + "openwpm.log", volume_name + "/" + filename + ".log")
 	with ZipFile(filename + ".zip", 'w') as zip_obj:

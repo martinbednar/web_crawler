@@ -116,7 +116,7 @@ while start+offset <= stop_on_page_index:
 			logging.debug("Try to crawl this block again. Current number of failures: %s", str(failure_counter))
 	else:
 		succesfully_crawled_websites = get_percent_successfully_crawled_websites(volume_name)
-		if (succesfully_crawled_websites > 60):
+		if (succesfully_crawled_websites > 75):
 			logging.debug("CRAWLED SUCCESSFULLY")
 			move_db_to_output_folder(volume_name, start, offset)
 			failure_counter = 0
@@ -127,7 +127,7 @@ while start+offset <= stop_on_page_index:
 			failure_counter = 0
 			start += offset
 		else:
-			logging.debug("CRAWLED LESS THAN 60 PERCENT WEBSITES")
+			logging.debug("CRAWLED LESS THAN 75 PERCENT WEBSITES")
 			logging.debug("Only %s percent websites was succesfully crawled.", str(succesfully_crawled_websites))
 			logging.debug("Try to crawl this block again. Current number of failures: %s", str(failure_counter))
 			failure_counter += 1

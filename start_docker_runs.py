@@ -106,7 +106,6 @@ while start+offset <= stop_on_page_index:
 	except:
 		logging.debug("CRAWL TIMEOUT")
 		failure_counter += 1
-		delete_crawl(volume_name)
 		
 		if failure_counter >= 3:
 			# Skip current block and continue crawling.
@@ -132,5 +131,6 @@ while start+offset <= stop_on_page_index:
 			logging.debug("Only %s percent websites was succesfully crawled.", str(succesfully_crawled_websites))
 			logging.debug("Try to crawl this block again. Current number of failures: %s", str(failure_counter))
 			failure_counter += 1
-			delete_crawl(volume_name)
+	# Save disk space.
+	delete_crawl(volume_name)
 

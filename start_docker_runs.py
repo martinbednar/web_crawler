@@ -102,7 +102,7 @@ while start+offset <= stop_on_page_index:
 	
 	run(cmd_vol)
 	try:
-		run(cmd_run, timeout=(offset*45)/3+600)
+		run(cmd_run, timeout=(offset*50)/3+600)
 	except:
 		logging.debug("CRAWL TIMEOUT")
 		failure_counter += 1

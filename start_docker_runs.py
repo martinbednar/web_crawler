@@ -11,9 +11,9 @@ parser.add_argument("--privacy", help="run the crawls with privacy extension", a
 args = parser.parse_args()
 
 start = 0
-offset = 1
+offset = 100
 privacy = getattr(args, 'privacy')
-stop_on_page_index = 1000000
+stop_on_page_index = 100
 # Max 3 failures in the same block (start+offset)
 failure_counter = 0
 
@@ -102,7 +102,7 @@ while start+offset <= stop_on_page_index:
 	
 	run(cmd_vol)
 	try:
-		run(cmd_run, timeout=(offset*50)/3+600)
+		run(cmd_run, timeout=(offset*55)/3+600)
 	except:
 		logging.debug("CRAWL TIMEOUT")
 		failure_counter += 1

@@ -79,7 +79,9 @@ class BrowserParams(DataClassJsonMixin):
     """
 
     extension_enabled: bool = True
-    web_api_manager_enabled: bool = True
+    extension_default: bool = False
+    extension_web_api_manager: bool = True
+    extension_privacy: bool = False
     cookie_instrument: bool = True
     js_instrument: bool = False
     js_instrument_settings: List[Union[str, dict]] = field(

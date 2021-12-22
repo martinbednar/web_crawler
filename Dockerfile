@@ -2,6 +2,12 @@ FROM krallin/ubuntu-tini:bionic
 
 SHELL ["/bin/bash", "-c"]
 
+ENV browsers=--browsers=3
+ENV sites=--sites=./sites_to_be_visited.json
+ENV start=--start=0
+ENV offset=--offset=20000
+ENV privacy=--privacy
+
 # Update ubuntu and setup conda
 # adapted from: https://hub.docker.com/r/conda/miniconda3/dockerfile
 RUN sed -i'' 's/archive\.ubuntu\.com/us\.archive\.ubuntu\.com/' /etc/apt/sources.list
@@ -31,5 +37,10 @@ ENV PATH $HOME/miniconda/envs/openwpm/bin:$PATH
 RUN mv firefox-bin /opt/firefox-bin
 ENV FIREFOX_BINARY /opt/firefox-bin/firefox-bin
 
-# Setting demo.py as the default command
-CMD [ "python", "demo.py"]
+# Setting crawl-javascript-apis.py as the default command
+# Pass arguments through docker run. Example:
+# docker build -t web_crawler .
+# docker run web_crawler --browsers=1 --sites=./sites_to_be_visited.json --start=0 --offset=1
+CMD python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset} ${privacy}
+#ENTRYPOINT python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset}
+

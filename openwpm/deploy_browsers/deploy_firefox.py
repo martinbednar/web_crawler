@@ -171,16 +171,23 @@ def deploy_firefox(
 
     # Add extension
     if browser_params.extension_enabled:
-
-        if browser_params.web_api_manager_enabled:
-            # Install our special extension
+        if browser_params.extension_privacy:
+            # Install our privacy extension
+            ext_loc = os.path.join(root_dir, "../Extension/privacy/uMatrix_1.4.4.firefox.signed.xpi")
+            ext_loc = os.path.normpath(ext_loc)
+            driver.install_addon(ext_loc, temporary=True)
+            logger.debug(
+                "BROWSER %i: Privacy extension (uMatrix) loaded" % browser_params.browser_id
+            )
+        if browser_params.extension_web_api_manager:
+            # Install our modified Web API Manager extension
             ext_loc = os.path.join(root_dir, "../Extension/web-api-manager/dist/webapi_manager-0.9.27.zip")
             ext_loc = os.path.normpath(ext_loc)
             driver.install_addon(ext_loc, temporary=True)
             logger.debug(
                 "BROWSER %i: Web Api Manager extension loaded" % browser_params.browser_id
             )
-        else:
+        if browser_params.extension_default:
             # Install extension
             ext_loc = os.path.join(root_dir, "../Extension/firefox/openwpm.xpi")
             ext_loc = os.path.normpath(ext_loc)

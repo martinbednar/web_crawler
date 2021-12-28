@@ -93,7 +93,7 @@ docker push martan305/web_crawler
 
 To minimize errors, it's a good idea to divide crawling multiple pages into batches (such as 100 pages).
 The `start_docker_runs.py` script is used for this, which runs a separate Docker container for each batch.
-Run the `start_docker_runs.py` script with following parameters:
+Run the `start_docker_runs.py` script as a root (with root rights) with following parameters:
 
 ```
 --start={integer}

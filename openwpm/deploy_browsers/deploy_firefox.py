@@ -173,11 +173,11 @@ def deploy_firefox(
     if browser_params.extension_enabled:
         if browser_params.extension_privacy:
             # Install our privacy extension
-            ext_loc = os.path.join(root_dir, "../Extension/privacy/uMatrix_1.4.4.firefox.signed.xpi")
+            ext_loc = os.path.join(root_dir, "../Extension/privacy/uBlock0_1.39.3b2.firefox.signed.xpi")
             ext_loc = os.path.normpath(ext_loc)
             driver.install_addon(ext_loc, temporary=True)
             logger.debug(
-                "BROWSER %i: Privacy extension (uMatrix) loaded" % browser_params.browser_id
+                "BROWSER %i: Privacy extension (uBlock Origin) loaded" % browser_params.browser_id
             )
         if browser_params.extension_web_api_manager:
             # Install our modified Web API Manager extension

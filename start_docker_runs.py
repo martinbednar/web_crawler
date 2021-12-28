@@ -7,13 +7,16 @@ import argparse
 import logging
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--privacy", help="run the crawls with privacy extension", action="store_true")
+parser.add_argument("--start", help="The initial index from which to start the crawl.", type=int, required=True)
+parser.add_argument("--offset", help="Run a separate Docker container for every <offset> pages.", type=int, required=True)
+parser.add_argument("--stop", help="The end index on which to stop the crawl.", type=int, required=True)
+parser.add_argument("--privacy", help="Run crawling with privacy extension.", action="store_true")
 args = parser.parse_args()
 
-start = 0
-offset = 100
+start = int(getattr(args, 'start'))
+offset = int(getattr(args, 'offset'))
+stop_on_page_index = int(getattr(args, 'stop'))
 privacy = getattr(args, 'privacy')
-stop_on_page_index = 100
 # Max 3 failures in the same block (start+offset)
 failure_counter = 0
 

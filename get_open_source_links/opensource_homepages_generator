@@ -1,0 +1,40 @@
+# Run this command in repository https://gitweb.gentoo.org/repo/gentoo.git/
+
+grep -r 'HOMEPAGE' ./* | awk -F '=' '{print $2}' | sed -e "s/[[:space:]]\+/ /g" | cut -d ' ' -f 2 | sed 's/\"//g'| cut -d '/' -f 1-3 | sort -u > homepages
+
+
+Smazání ftp://, # a pod.
+
+
+Předzpracování - seřazení pozpátku lexikograficky:
+rev < opensource_homepages | sort | rev | tac > opensource_homepages_rev
+rm ./opensource_homepages
+mv opensource_homepages_rev opensource_homepages
+
+
+Skript merge_duplicate_sites:
+Sloučení http a https.
+(např.:
+https://www.flameeyes.eu
+http://www.flameeyes.eu
+)
+
+Sloučení www a bez www.
+(např.:
+http://www.netbsd.org
+https://netbsd.org
+)
+
+
+Sloučení adres s konečným a bez konečného lomítka (jiného znaku)
+(např..
+https://www.vim.org
+https://www.vim.org}
+http://www.vim.org
+)
+
+
+
+Manuálně promazané domény (-> značí webovou stránku, která byla ze skupiny ponechána):
+zatím žádné
+

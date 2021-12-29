@@ -2,11 +2,9 @@ FROM krallin/ubuntu-tini:bionic
 
 SHELL ["/bin/bash", "-c"]
 
-ENV browsers=--browsers=3
-ENV sites=--sites=./sites_to_be_visited.json
+ENV sites=--sites=./opensource_crawl/opensource_homepages.csv
 ENV start=--start=0
-ENV offset=--offset=3
-ENV privacy=--privacy
+ENV length=--length=500
 
 # Update ubuntu and setup conda
 # adapted from: https://hub.docker.com/r/conda/miniconda3/dockerfile
@@ -37,7 +35,5 @@ ENV PATH $HOME/miniconda/envs/openwpm/bin:$PATH
 RUN mv firefox-bin /opt/firefox-bin
 ENV FIREFOX_BINARY /opt/firefox-bin/firefox-bin
 
-# Setting crawl-javascript-apis.py as the default command
-CMD python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset} ${privacy}
-#ENTRYPOINT python crawl-javascript-apis.py ${browsers} ${sites} ${start} ${offset}
-
+# Setting crawl-links.py as the default command
+CMD python crawl-links.py ${sites} ${start} ${length}

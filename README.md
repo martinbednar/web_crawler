@@ -1,5 +1,7 @@
 # Web Crawler
 
+**This branch contains a tool for getting links from the homepages of the websites.**
+
 Web Crawler is a tool for automatically visiting websites and collecting JavaScript calls that they make. Web Crawler is based on OpenWPM.
 
 [OpenWPM](https://github.com/openwpm/OpenWPM) is a platform that allows a large number of websites to be visited in order to perform various measurements on the web.
@@ -36,26 +38,6 @@ The results will be recorded in a SQLite database in the `./datadir` folder.
 You need to export the JSON file from this SQLite database and edit it to have the same format as the `sites_to_be_visited.json` file.
 
 
-
-### JavaScript usage measurement
-To measure JavaScript usage, run the `crawl-javascript-apis.py` script, which accepts the following parameters:
-
-```
---browsers={integer}
---sites={string}
---start={integer}
---offset={integer}
---privacy
-```
-
-The `--browsers={integer}` parameter defines the maximum number of browsers that can be run simultaneously during measurements.
-The `--sites={string}` parameter defines the path to the input file that has the structure of the `sites_to_be_visited.json` file.
-The `--start={integer}` parameter specifies the initial index of the web page from webpages list to be analyzed.
-The `--offset={integer}` parameter specifies the number of subpages to be analyzed.
-The presence of the `--privacy` parameter determines whether the given measurement should be performed with the active privacy web browser extension (e.g. uBlock Origin).
-
-The results will be recorded in a SQLite database in the `./datadir` folder.
-
 ## Run in a Docker container
 
 The recommended way is to launch a Web Crawler in the Docker container.
@@ -65,14 +47,14 @@ The recommended way is to launch a Web Crawler in the Docker container.
 Build Docker image:
 
 ```
-docker build -t martan305/web_crawler .
+docker build -t martan305/crawl_links .
 ```
 
-Test the new Docker image by running in the new Docker container:
+Run links crawling:
 
 ```
 docker volume create crawler_output
-docker run -it --name=web_crawler --env offset="--offset=5" --env privacy="" --mount source=crawler_output,destination=/opt/OpenWPM/datadir martan305/web_crawler
+docker run -it --env start='--start=0' --env length='--length=1' --name=crawl_links --mount source=crawler_output,destination=/opt/OpenWPM/datadir martan305/crawl_links
 ```
 
 Check crawler output:
@@ -86,28 +68,9 @@ ls /var/lib/docker/volumes/crawler_output/_data
 Push the new version of the Docker image to Docker Hub:
 
 ```
-docker push martan305/web_crawler
+docker push martan305/crawl_links
 ```
 
-### Run crawling
-
-To minimize errors, it's a good idea to divide crawling multiple pages into batches (such as 100 pages).
-The `start_docker_runs.py` script is used for this, which runs a separate Docker container for each batch.
-Run the `start_docker_runs.py` script as a root (with root rights) with following parameters:
-
-```
---start={integer}
---offset={integer}
---stop={integer}
---privacy
-```
-
-The `--start={integer}` parameter specifies the initial index from which to start the crawl.
-The `--offset={integer}` parameter specifies a batch size. Run a separate Docker container for every <offset> pages.
-The `--stop={integer}` parameter specifies the end index on which to stop the crawl.
-The presence of the `--privacy` parameter determines whether the given measurement should be performed with the active privacy web browser extension (e.g. uBlock Origin).
-
-The results will be recorded to zip archives in the same folder where the `start_docker_runs.py` script is stored.
 
 ### Docker clean up
 

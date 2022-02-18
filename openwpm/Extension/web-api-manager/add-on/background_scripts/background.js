@@ -195,4 +195,5 @@
             responseHeaders: details.responseHeaders,
         };
     }, requestFilter, ["blocking", "responseHeaders"]);
+    await browser.profileDirIO.writeFile("OPENWPM_STARTUP_SUCCESS.txt", "");
 }());

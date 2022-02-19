@@ -17,22 +17,22 @@ url_a = utilities.BASE_TEST_URL + "/simple_a.html"
 
 PAGE_LINKS = {
     (
-        u"http://localtest.me:8000/test_pages/simple_a.html",
-        u"http://localtest.me:8000/test_pages/simple_c.html",
+        f"{utilities.BASE_TEST_URL}/simple_a.html",
+        f"{utilities.BASE_TEST_URL}/simple_c.html",
     ),
     (
-        u"http://localtest.me:8000/test_pages/simple_a.html",
-        u"http://localtest.me:8000/test_pages/simple_d.html",
+        f"{utilities.BASE_TEST_URL}/simple_a.html",
+        f"{utilities.BASE_TEST_URL}/simple_d.html",
     ),
     (
-        u"http://localtest.me:8000/test_pages/simple_a.html",
-        u"http://example.com/test.html?localtest.me",
+        f"{utilities.BASE_TEST_URL}/simple_a.html",
+        "http://example.com/test.html?localhost",
     ),
 }
 
 
 class CollectLinksCommand(BaseCommand):
-    """ Collect links with `scheme` and save in table `table_name` """
+    """Collect links with `scheme` and save in table `table_name`"""
 
     def __init__(self, table_name: TableName, scheme: str) -> None:
         self.scheme = scheme
@@ -76,7 +76,7 @@ class CollectLinksCommand(BaseCommand):
 
 
 def test_custom_function(default_params, xpi, server):
-    """ Test `custom_function` with an inline func that collects links """
+    """Test `custom_function` with an inline func that collects links"""
     table_name = TableName("page_links")
 
     manager_params, browser_params = default_params

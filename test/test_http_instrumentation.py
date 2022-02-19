@@ -34,177 +34,169 @@ from .openwpmtest import OpenWPMTest
 #   resource_type
 HTTP_REQUESTS = {
     (
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"undefined",
-        u"undefined",
-        u"undefined",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        "undefined",
+        "undefined",
+        "undefined",
         0,
         None,
         None,
-        u"main_frame",
+        "main_frame",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_favicon.ico",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_favicon.ico",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
-    ),
-    # (
-    #     u'http://localtest.me:8000/test_pages/shared/test_favicon.ico',
-    #     u'undefined',
-    #     u'http://localtest.me:8000',
-    #     u'http://localtest.me:8000',
-    #     u'http://localtest.me:8000/test_pages/http_test_page.html',
-    #     0, None, None, u'image',
-    #  ),
-    (
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
-        0,
-        None,
-        None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script_2.js",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"script",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script.js",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_script_2.js",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"script",
+        "script",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_script.js",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "script",
     ),
     (
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_image.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"sub_frame",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_style.css",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"stylesheet",
+        "sub_frame",
     ),
     (
-        u"http://localtest.me:8000/404.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_style.css",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "stylesheet",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame1.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/404.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame1.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req1.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req1.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req3.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req3.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
+    ),
+    (
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        0,
+        None,
+        None,
+        "image",
     ),
 }
 
@@ -212,208 +204,208 @@ HTTP_REQUESTS = {
 # TODO: webext instrumentation doesn't support referrer yet
 HTTP_RESPONSES = {
     (
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         # u'',
-        u"",
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_favicon.ico",
+        f"{utilities.BASE_TEST_URL}/shared/test_favicon.ico",
         # u'',
-        u"",
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_style.css",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/shared/test_style.css",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script.js",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/shared/test_script.js",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image.png",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/shared/test_image.png",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
-        # u'http://localtest.me:8000/test_pages/http_test_page_2.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
+        # u'http://localhost:8000/test_pages/http_test_page_2.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script_2.js",
-        # u'http://localtest.me:8000/test_pages/http_test_page_2.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/shared/test_script_2.js",
+        # u'http://localhost:8000/test_pages/http_test_page_2.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/404.png",
-        # u'http://localtest.me:8000/test_pages/http_test_page_2.html',
-        u"",
+        f"{utilities.BASE_TEST_URL_NOPATH}/404.png",
+        # u'http://localhost:8000/test_pages/http_test_page_2.html',
+        "",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
-        u"",
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
+        "",
     ),
 }
 
 # format: (source_url, destination_url, location header)
 HTTP_REDIRECTS = {
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req1.png",
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req2.png",
-        u"req2.png?dst=req3.png&dst=/test_pages/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req1.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req2.png",
+        "req2.png?dst=req3.png&dst=/test_pages/shared/test_image_2.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req2.png",
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req3.png",
-        u"req3.png?dst=/test_pages/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req3.png",
+        "req3.png?dst=/test_pages/shared/test_image_2.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req3.png",
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
-        u"/test_pages/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req3.png",
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
+        "/test_pages/shared/test_image_2.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame1.png",
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame2.png",
-        u"frame2.png?dst=/404.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame1.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame2.png",
+        "frame2.png?dst=/404.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame2.png",
-        u"http://localtest.me:8000/404.png",
-        u"/404.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/404.png",
+        "/404.png",
     ),
 }
 
 # Data for test_cache_hits_recorded
 HTTP_CACHED_REQUESTS = {
     (
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"undefined",
-        u"undefined",
-        u"undefined",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        "undefined",
+        "undefined",
+        "undefined",
         0,
         None,
         None,
-        u"main_frame",
+        "main_frame",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script_2.js",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_script_2.js",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"script",
+        "script",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script.js",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_script.js",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"script",
+        "script",
     ),
     (
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"sub_frame",
+        "sub_frame",
     ),
     (
-        u"http://localtest.me:8000/404.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/404.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame1.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame1.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req1.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req1.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req3.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req3.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
 }
 
@@ -421,174 +413,172 @@ HTTP_CACHED_REQUESTS = {
 # TODO: referrer isn't recorded by webext instrumentation yet.
 HTTP_CACHED_RESPONSES = {
     (
-        u"http://localtest.me:8000/test_pages/http_test_page.html",
+        f"{utilities.BASE_TEST_URL}/http_test_page.html",
         # u'',
         1,
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script.js",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
+        f"{utilities.BASE_TEST_URL}/shared/test_script.js",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
         1,
     ),
     (
-        u"http://localtest.me:8000/test_pages/http_test_page_2.html",
-        # u'http://localtest.me:8000/test_pages/http_test_page.html',
+        f"{utilities.BASE_TEST_URL}/http_test_page_2.html",
+        # u'http://localhost:8000/test_pages/http_test_page.html',
         1,
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_script_2.js",
-        # u'http://localtest.me:8000/test_pages/http_test_page_2.html',
+        f"{utilities.BASE_TEST_URL}/shared/test_script_2.js",
+        # u'http://localhost:8000/test_pages/http_test_page_2.html',
         1,
     ),
     (
-        u"http://localtest.me:8000/404.png",
-        # u'http://localtest.me:8000/test_pages/http_test_page_2.html',
+        f"{utilities.BASE_TEST_URL_NOPATH}/404.png",
+        # u'http://localhost:8000/test_pages/http_test_page_2.html',
         1,
     ),
-    (u"http://localtest.me:8000/test_pages/shared/test_image_2.png", 1),
+    (f"{utilities.BASE_TEST_URL}/shared/test_image_2.png", 1),
 }
 
 # format: (source_url, destination_url)
 HTTP_CACHED_REDIRECTS = {
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame1.png",
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame1.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame2.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/frame2.png",
-        u"http://localtest.me:8000/404.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/frame2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/404.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req1.png",
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req1.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req2.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req2.png",
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req3.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req3.png",
     ),
     (
-        u"http://localtest.me:8000/MAGIC_REDIRECT/req3.png",
-        u"http://localtest.me:8000/test_pages/shared/test_image_2.png",
+        f"{utilities.BASE_TEST_URL_NOPATH}/MAGIC_REDIRECT/req3.png",
+        f"{utilities.BASE_TEST_URL}/shared/test_image_2.png",
     ),
 }
 
 # Test URL attribution for worker script requests
 HTTP_WORKER_SCRIPT_REQUESTS = {
     (
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
-        u"undefined",
-        u"undefined",
-        u"undefined",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
+        "undefined",
+        "undefined",
+        "undefined",
         0,
         None,
         None,
-        u"main_frame",
+        "main_frame",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_favicon.ico",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_favicon.ico",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/worker.js",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/worker.js",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
         0,
         None,
         None,
-        u"script",
+        "script",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image.png",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL}/shared/test_image.png",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/http_worker_page.html",
         1,
         None,
         None,
-        u"xmlhttprequest",
+        "xmlhttprequest",
     ),
     (
-        u"http://localtest.me:8000/test_pages/shared/test_image.png",
-        u"http://localtest.me:8000/test_pages/shared/worker.js",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000",
-        u"http://localtest.me:8000/test_pages/shared/worker.js",
+        f"{utilities.BASE_TEST_URL}/shared/test_image.png",
+        f"{utilities.BASE_TEST_URL}/shared/worker.js",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL_NOPATH}",
+        f"{utilities.BASE_TEST_URL}/shared/worker.js",
         1,
         None,
         None,
-        u"xmlhttprequest",
+        "xmlhttprequest",
     ),
 }
 
 # Test URL-attribution for Service Worker requests.
-# localhost URLs are used instead of localtest.me because service workers
-# are only loaded from secure contexts.
 HTTP_SERVICE_WORKER_REQUESTS = {
     (
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
-        u"undefined",
-        u"undefined",
-        u"undefined",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
+        "undefined",
+        "undefined",
+        "undefined",
         0,
         None,
         None,
-        u"main_frame",
+        "main_frame",
     ),
     (
-        u"http://localhost:8000/test_pages/shared/test_favicon.ico",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
-        u"http://localhost:8000",
-        u"http://localhost:8000",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000/test_pages/shared/test_favicon.ico",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000",
+        "http://localhost:8000",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
         0,
         None,
         None,
-        u"image",
+        "image",
     ),
     (
-        u"http://localhost:8000/test_pages/shared/service_worker.js",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
-        u"http://localhost:8000",
-        u"http://localhost:8000",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000/test_pages/shared/service_worker.js",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000",
+        "http://localhost:8000",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
         0,
         None,
         None,
-        u"script",
+        "script",
     ),
     (
-        u"http://localhost:8000/test_pages/shared/test_image.png",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
-        u"http://localhost:8000",
-        u"http://localhost:8000",
-        u"http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000/test_pages/shared/test_image.png",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
+        "http://localhost:8000",
+        "http://localhost:8000",
+        "http://localhost:8000/test_pages/http_service_worker_page.html",
         1,
         None,
         None,
-        u"xmlhttprequest",
+        "xmlhttprequest",
     ),
     (
-        u"http://localhost:8000/test_pages/shared/test_image_2.png",
-        u"http://localhost:8000/test_pages/shared/service_worker.js",
-        u"http://localhost:8000",
-        u"http://localhost:8000",
-        u"http://localhost:8000/test_pages/shared/service_worker.js",
+        "http://localhost:8000/test_pages/shared/test_image_2.png",
+        "http://localhost:8000/test_pages/shared/service_worker.js",
+        "http://localhost:8000",
+        "http://localhost:8000",
+        "http://localhost:8000/test_pages/shared/service_worker.js",
         1,
         None,
         None,
-        u"xmlhttprequest",
+        "xmlhttprequest",
     ),
 }
 
@@ -602,67 +592,6 @@ class TestHTTPInstrument(OpenWPMTest):
         manager_params, browser_params = self.get_test_config(data_dir)
         browser_params[0].http_instrument = True
         return manager_params, browser_params
-
-    def test_page_visit(self):
-        test_url = utilities.BASE_TEST_URL + "/http_test_page.html"
-        db = self.visit(test_url)
-
-        request_id_to_url = dict()
-
-        # HTTP Requests
-        rows = db_utils.query_db(db, "SELECT * FROM http_requests")
-        observed_records = set()
-        for row in rows:
-            observed_records.add(
-                (
-                    row["url"].split("?")[0],
-                    row["top_level_url"],
-                    row["triggering_origin"],
-                    row["loading_origin"],
-                    row["loading_href"],
-                    row["is_XHR"],
-                    row["is_third_party_channel"],
-                    row["is_third_party_to_top_window"],
-                    row["resource_type"],
-                )
-            )
-
-            request_id_to_url[row["request_id"]] = row["url"]
-        assert HTTP_REQUESTS == observed_records
-
-        # HTTP Responses
-        rows = db_utils.query_db(db, "SELECT * FROM http_responses")
-        observed_records: Set[Tuple[str, str]] = set()
-        for row in rows:
-            observed_records.add(
-                (
-                    row["url"].split("?")[0],
-                    # TODO: webext-instrumentation doesn't support referrer
-                    # yet | row['referrer'],
-                    row["location"],
-                )
-            )
-            assert row["request_id"] in request_id_to_url
-            assert request_id_to_url[row["request_id"]] == row["url"]
-        assert HTTP_RESPONSES == observed_records
-
-        # HTTP Redirects
-        rows = db_utils.query_db(db, "SELECT * FROM http_redirects")
-        observed_records = set()
-        for row in rows:
-            # TODO: webext instrumentation doesn't support new_request_id yet
-            # src = request_id_to_url[row['old_request_id']].split('?')[0]
-            # dst = request_id_to_url[row['new_request_id']].split('?')[0]
-            src = row["old_request_url"].split("?")[0]
-            dst = row["new_request_url"].split("?")[0]
-            headers = json.loads(row["headers"])
-            location = None
-            for header, value in headers:
-                if header.lower() == "location":
-                    location = value
-                    break
-            observed_records.add((src, dst, location))
-        assert HTTP_REDIRECTS == observed_records
 
     def test_worker_script_requests(self):
         """Check correct URL attribution for requests made by worker script"""
@@ -694,7 +623,7 @@ class TestHTTPInstrument(OpenWPMTest):
 
     def test_service_worker_requests(self):
         """Check correct URL attribution for requests made by service worker"""
-        test_url = "http://localhost:8000/test_pages" + "/http_service_worker_page.html"
+        test_url = utilities.BASE_TEST_URL + "/http_service_worker_page.html"
         db = self.visit(test_url)
 
         request_id_to_url = dict()
@@ -877,15 +806,92 @@ class TestPOSTInstrument(OpenWPMTest):
         # POST data is stored as JSON in the DB
         post_body_decoded = json.loads(post_body)
         expected_body = {
-            u"username": u"name surname+",
-            u"upload-css": css_file_content,
-            u"upload-img": img_file_content,
+            "username": "name surname+",
+            "upload-css": css_file_content,
+            "upload-img": img_file_content,
         }
         assert expected_body == post_body_decoded
 
 
+@pytest.mark.parametrize("delayed", [True, False])
+def test_page_visit(task_manager_creator, http_params, delayed):
+    test_url = utilities.BASE_TEST_URL + "/http_test_page.html"
+    manager_params, browser_params = http_params()
+    if delayed:
+        for browser_param in browser_params:
+            browser_param.custom_params[
+                "pre_instrumentation_code"
+            ] = """
+                const startTime = Date.now();
+                while (Date.now() - startTime < 5000) { // Delaying for 5s
+                    console.log("delaying startup");
+                };
+            """
+
+    tm, db = task_manager_creator((manager_params, browser_params))
+    with tm as tm:
+        tm.get(test_url)
+
+    request_id_to_url = dict()
+
+    # HTTP Requests
+    rows = db_utils.query_db(db, "SELECT * FROM http_requests")
+    observed_records = set()
+    for row in rows:
+        observed_records.add(
+            (
+                row["url"].split("?")[0],
+                row["top_level_url"],
+                row["triggering_origin"],
+                row["loading_origin"],
+                row["loading_href"],
+                row["is_XHR"],
+                row["is_third_party_channel"],
+                row["is_third_party_to_top_window"],
+                row["resource_type"],
+            )
+        )
+
+        request_id_to_url[row["request_id"]] = row["url"]
+    assert HTTP_REQUESTS == observed_records
+
+    # HTTP Responses
+    rows = db_utils.query_db(db, "SELECT * FROM http_responses")
+    observed_records: Set[Tuple[str, str]] = set()
+    for row in rows:
+        observed_records.add(
+            (
+                row["url"].split("?")[0],
+                # TODO: webext-instrumentation doesn't support referrer
+                # yet | row['referrer'],
+                row["location"],
+            )
+        )
+        assert row["request_id"] in request_id_to_url
+        assert request_id_to_url[row["request_id"]] == row["url"]
+    assert HTTP_RESPONSES == observed_records
+
+    # HTTP Redirects
+    rows = db_utils.query_db(db, "SELECT * FROM http_redirects")
+    observed_records = set()
+    for row in rows:
+        # TODO: webext instrumentation doesn't support new_request_id yet
+        # src = request_id_to_url[row['old_request_id']].split('?')[0]
+        # dst = request_id_to_url[row['new_request_id']].split('?')[0]
+        src = row["old_request_url"].split("?")[0]
+        dst = row["new_request_url"].split("?")[0]
+        headers = json.loads(row["headers"])
+        location = None
+        for header, value in headers:
+            if header.lower() == "location":
+                location = value
+                break
+        observed_records.add((src, dst, location))
+    assert HTTP_REDIRECTS == observed_records
+
+
 def test_javascript_saving(http_params, xpi, server):
-    """ check that javascript content is saved and hashed correctly """
+    """check that javascript content is saved and hashed correctly"""
     test_url = utilities.BASE_TEST_URL + "/http_test_page.html"
     manager_params, browser_params = http_params()
 
@@ -917,7 +923,7 @@ def test_javascript_saving(http_params, xpi, server):
 
 
 def test_document_saving(http_params, xpi, server):
-    """ check that document content is saved and hashed correctly """
+    """check that document content is saved and hashed correctly"""
     test_url = utilities.BASE_TEST_URL + "/http_test_page.html"
     expected_hashes = {
         "2390eceab422db15bc45940b7e042e83e6cbd5f279f57e714bc4ad6cded7f966",
@@ -949,7 +955,7 @@ def test_document_saving(http_params, xpi, server):
 
 
 def test_content_saving(http_params, xpi, server):
-    """ check that content is saved and hashed correctly """
+    """check that content is saved and hashed correctly"""
     test_url = utilities.BASE_TEST_URL + "/http_test_page.html"
     manager_params, browser_params = http_params()
     for browser_param in browser_params:

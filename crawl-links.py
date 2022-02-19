@@ -92,7 +92,7 @@ for i in range(NUM_BROWSERS):
 
 # Update TaskManager configuration (use this for crawl-wide settings)
 manager_params.data_directory = Path("./datadir/")
-manager_params.log_directory = Path("./datadir/")
+manager_params.log_path = Path("./datadir/openwpm.log")
 
 
 

@@ -1,6 +1,8 @@
+# Using OpenWPM
+
 ## Overview
 
-In this section, we present three basic development demos for working on the OpenWPM platform. In the first, we show how to run a basic crawl from scratch. In the second, we show how to add a new command to the platform. In the third, we provide a small example of data analysis that can be performed on the platform
+In this section, we present three basic development demos for working on the OpenWPM platform. In the first, we show how to run a basic crawl from scratch. In the second, we show how to add a new command to the platform. In the third, we provide a small example of data analysis that can be performed on the platform.
 
 ## Running a simple crawl
 
@@ -8,7 +10,7 @@ Have a look at [demo.py](../demo.py)
 Generally, measurement crawls should be able to be run using scripts with lengths on the order of 100 lines of code.
 Even within this short script, there are several options that a user can change.
 
-Users can change the settings for task manager and individual browsers so that, for instance, certain browsers can run headless while others do not. We provide a method to read the default configuration settings into a classes that can be passed to the `TaskManager` instance. Note that browser configuration is **per-browser**, so this command will return a list of class<BrowserParams>.
+Users can change the settings for task manager and individual browsers so that, for instance, certain browsers can run headless while others do not. We provide a method to read the default configuration settings into classes that can be passed to the `TaskManager` instance. Note that browser configuration is **per-browser**, so this command will return a list of `BrowserParams`.
 
 ```py
 from openwpm.config import BrowserParams, ManagerParams
@@ -17,8 +19,10 @@ manager_params = ManagerParams(num_browsers=5)
 browser_params = [BrowserParams() for _ in range(manager_params.num_browsers)]
 ```
 
-#### Loading Custom Browser or Manager configs
-Users can load custom Browser and Platform/Manager configuration by writing them into a json file and then loading them into respective dataclasses. For example:
+### Loading Custom Browser or Manager configs
+
+Users can load custom Browser and Platform/Manager configuration by writing them into a JSON file and then loading them into respective dataclasses. For example:
+
 ```py
 from openwpm.config import BrowserParams, ManagerParams
 
@@ -31,12 +35,11 @@ for _ in range(num_browsers):
       browser_params.append(BrowserParams.from_json(file.read()))
 ```
 
-
 ## Defining a new command
 
 Please have a look at [`custom_command.py`](../custom_command.py). Note that custom commands must be
 defined in a separate module and imported. They can't be defined within the main crawl script.
-See [#837](https://github.com/mozilla/OpenWPM/issues/837).
+See [#837](https://github.com/openwpm/OpenWPM/issues/837).
 
 ## Running a simple analysis
 

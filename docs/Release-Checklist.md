@@ -7,8 +7,8 @@ We aim to release a new version of OpenWPM with each new Firefox release (~1 rel
     2. Find the commit hash for the Firefox release version you'd like to upgrade to.
     3. Update the `TAG` variable in [`scripts/install-firefox.sh`](../scripts/install-firefox.sh#L12) to that hash and the comment to the new tag name.
 2. Update extension dependencies.
-    1. Run `npm update` in `Extension/firefox`.
-    2. Run `npm update` in `Extension/webext-instrumentation`.
+    1. Run `npm update` in `openwpm/Extension/firefox`.
+    2. Run `npm update` in `openwpm/Extension/webext-instrumentation`.
     3. Run `npm update` in the base directory
 3. Update python and system dependencies by following the ["managing requirements" instructions](../CONTRIBUTING.md#managing-requirements).
 4. Increment the version number in [VERSION](../VERSION)

@@ -56,7 +56,6 @@ def deploy_firefox(
         )
         load_profile(
             browser_profile_path,
-            manager_params,
             browser_params,
             browser_params.seed_tar,
         )
@@ -67,7 +66,6 @@ def deploy_firefox(
         )
         load_profile(
             browser_profile_path,
-            manager_params,
             browser_params,
             browser_params.recovery_tar,
         )
@@ -83,7 +81,7 @@ def deploy_firefox(
         fo.add_argument("--height={}".format(DEFAULT_SCREEN_RES[1]))
     if display_mode == "xvfb":
         try:
-            display = Display(visible=0, size=DEFAULT_SCREEN_RES)
+            display = Display(visible=False, size=DEFAULT_SCREEN_RES)
             display.start()
             display_pid, display_port = display.pid, display.display
         except EasyProcessError:

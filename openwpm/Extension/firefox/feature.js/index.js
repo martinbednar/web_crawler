@@ -43,7 +43,8 @@ async function main() {
       callstack_instrument:true,
       save_content:false,
       testing:true,
-      browser_id:0
+      browser_id:0,
+      custom_params: {}
     };
     console.log("WARNING: config not found. Assuming this is a test run of",
                 "the extension. Outputting all queries to console.", {config});
@@ -53,6 +54,9 @@ async function main() {
                        config['logger_address'],
                        config['browser_id']);
 
+  if (config["custom_params"]["pre_instrumentation_code"]) {
+    eval(config["custom_params"]["pre_instrumentation_code"])
+  }
   if (config["navigation_instrument"]) {
     loggingDB.logDebug("Navigation instrumentation enabled");
     let navigationInstrument = new NavigationInstrument(loggingDB);
@@ -90,6 +94,8 @@ async function main() {
     let dnsInstrument = new DnsInstrument(loggingDB);
     dnsInstrument.run(config['browser_id']);
   }
+
+  await browser.profileDirIO.writeFile("OPENWPM_STARTUP_SUCCESS.txt", "");
 }
 
 main();

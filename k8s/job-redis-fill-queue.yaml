@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fill-redis-queue
+spec:
+  template:
+    spec:
+      containers:
+      - name: fill-redis-queue
+        image: martan305/web_crawler:df8bcb129255612cd1e00c3e69f419072c740f99
+        command: ["python",  "fill-up-redis-queue.py", "--sites", "sites_to_be_visited.json"]
+        imagePullPolicy: IfNotPresent
+
+        env:
+          - name: REDIS_URL
+            valueFrom:
+              configMapKeyRef:
+                name: web-crawler
+                key: REDIS_URL
+
+      restartPolicy: Never
+  backoffLimit: 4

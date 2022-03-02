@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+spec:
+  selector:
+    matchLabels:
+      name: redis
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        name: redis
+        app: redis
+        version: v1
+    spec:
+      imagePullSecrets:
+        - name: gitlab
+      containers:
+        - name: redis
+          image: redis:6-alpine
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "250m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 6379

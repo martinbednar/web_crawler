@@ -121,15 +121,13 @@ manager_params.log_path = Path("./datadir/openwpm.log")
 # manager_params.process_watchdog = True
 
 
-
-
-
+sqlite_name = os.environ.get('HOSTNAME', 'crawl-data') + '.sqlite'
 
 # Commands time out by default after 60 seconds
 with TaskManager(
     manager_params,
     browser_params,
-    SQLiteStorageProvider(Path("./datadir/crawl-data.sqlite")),
+    SQLiteStorageProvider(Path(f"./datadir/{sqlite_name}")),
     None,
 ) as manager:
     # Visits the sites

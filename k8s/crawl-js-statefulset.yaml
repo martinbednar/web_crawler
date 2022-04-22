@@ -30,12 +30,18 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: crawl-js
-        image: martan305/web_crawler:282bd2bb8dbd46ea1c8b9d40c7c69baafacdae00
+        image: martan305/web_crawler:ecfaa6bd2b6cd5a1a5ebaa0b5fb9284e83457a1a
         command: ["python",  "crawl-javascript-apis.py", "--browsers", "3", "--privacy"]
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
           name: crawl-js
+        env:
+          - name: REDIS_URL
+            valueFrom:
+              configMapKeyRef:
+                name: web-crawler
+                key: REDIS_URL
         volumeMounts:
         - name: crawl-js
           mountPath: /opt/OpenWPM/datadir

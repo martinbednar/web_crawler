@@ -9,5 +9,10 @@ spec:
     imagePullPolicy: IfNotPresent
     command: [ "/bin/sh", "-c", "--" ]
     args: [ "while true; do sleep 30; done;"  ]
-    ports:
-    - containerPort: 80
+    volumeMounts:
+    - name: crawl-js
+      mountPath: /opt/OpenWPM/datadir
+  volumes:
+  - name: crawl-js
+    persistentVolumeClaim:
+      claimName: crawl-js-crawl-js-7

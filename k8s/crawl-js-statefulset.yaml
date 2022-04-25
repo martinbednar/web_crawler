@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: crawl-js
+  labels:
+    app: crawl-js
+spec:
+  ports:
+  - port: 80
+    name: crawl-js
+  clusterIP: None
+  selector:
+    app: crawl-js
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: crawl-js
+spec:
+  selector:
+    matchLabels:
+      app: crawl-js
+  serviceName: crawl-js
+  replicas: 8
+  template:
+    metadata:
+      labels:
+        app: crawl-js
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: crawl-js
+        image: martan305/web_crawler:ecfaa6bd2b6cd5a1a5ebaa0b5fb9284e83457a1a
+        command: ["python",  "crawl-javascript-apis.py", "--browsers", "3", "--privacy"]
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+          name: crawl-js
+        env:
+          - name: REDIS_URL
+            valueFrom:
+              configMapKeyRef:
+                name: web-crawler
+                key: REDIS_URL
+        volumeMounts:
+        - name: crawl-js
+          mountPath: /opt/OpenWPM/datadir
+  volumeClaimTemplates:
+  - metadata:
+      name: crawl-js
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "rook-ceph-block"
+      resources:
+        requests:
+          storage: 30Gi

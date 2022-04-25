@@ -29,34 +29,58 @@ from openwpm.config import BrowserParams, ManagerParams
 from openwpm.storage.sql_provider import SQLiteStorageProvider
 from openwpm.task_manager import TaskManager
 
+import os
 import argparse
 import csv
 import re
 import json
 import functools
 
+import redis
+
+class RedisQueue:
+    redis = None
+
+    def __init__(self, queue_name):
+        redis_url = os.getenv('REDIS_URL')
+        if redis_url:
+            self.redis = redis.from_url(redis_url)
+        self.queue_name = queue_name
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.redis and self.redis.llen(self.queue_name):
+            return json.loads(self.redis.lpop(self.queue_name).decode())
+        raise StopIteration
+
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--browsers", help="number of browsers to be spawned", type=int, required=True)
-parser.add_argument("--sites", help="path to JSON file containing information about sites to be crawled, required attributes are \"site\" and \"links\"", type=str, required=True)
-parser.add_argument("--start", help="index to start on", type=int, required=True)
-parser.add_argument("--offset", help="how many websites should be taken", type=int, required=True)
+parser.add_argument("--sites", help="path to JSON file containing information about sites to be crawled, required attributes are \"site\" and \"links\"", type=str)
+parser.add_argument("--start", help="index to start on", type=int, default=0)
+parser.add_argument("--offset", help="how many websites should be taken", type=int)
 parser.add_argument("--privacy", help="run the crawl with privacy extension", action="store_true")
 args = parser.parse_args()
 
-args = parser.parse_args()
-offset_start = int(getattr(args, 'start'))
-offset_end = int(getattr(args, 'start')) + int(getattr(args, 'offset'))
-
-inputFilePath = getattr(args, 'sites')
-
-
 # The list of sites that we wish to crawl
 NUM_BROWSERS = int(getattr(args, 'browsers'))
-sites = []
-with open(getattr(args, 'sites'), "r") as json_file:
-    data = json.load(json_file)
-    sites = data['sites']
-sites = sites[offset_start:offset_end]
+
+inputFilePath = getattr(args, 'sites')
+sites_iterable = []  # sites placeholder
+if inputFilePath:
+    offset_start = int(getattr(args, 'start'))
+    offset_end = int(getattr(args, 'start')) + int(getattr(args, 'offset'))
+
+    sites = []
+    with open(getattr(args, 'sites'), "r") as json_file:
+        data = json.load(json_file)
+        sites = data['sites']
+    sites_iterable = sites[offset_start:offset_end]
+else:
+    sites_iterable = RedisQueue('sites')
 
 
 # Loads the default ManagerParams
@@ -97,19 +121,17 @@ manager_params.log_path = Path("./datadir/openwpm.log")
 # manager_params.process_watchdog = True
 
 
-
-
-
+sqlite_name = os.environ.get('HOSTNAME', 'crawl-data') + '.sqlite'
 
 # Commands time out by default after 60 seconds
 with TaskManager(
     manager_params,
     browser_params,
-    SQLiteStorageProvider(Path("./datadir/crawl-data.sqlite")),
+    SQLiteStorageProvider(Path(f"./datadir/{sqlite_name}")),
     None,
 ) as manager:
     # Visits the sites
-    for index, siteObj in enumerate(sites):
+    for index, siteObj in enumerate(sites_iterable):
 
         def callback(success: bool, val: str = siteObj['site_url']) -> None:
             print(

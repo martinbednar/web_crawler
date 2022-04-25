@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dummy-pod
+spec:
+  containers:
+  - name: dummy-pod
+    image: alpine
+    imagePullPolicy: IfNotPresent
+    command: [ "/bin/sh", "-c", "--" ]
+    args: [ "while true; do sleep 30; done;"  ]
+    volumeMounts:
+    - name: crawl-js
+      mountPath: /opt/OpenWPM/datadir
+  volumes:
+  - name: crawl-js
+    persistentVolumeClaim:
+      claimName: crawl-js-crawl-js-7
